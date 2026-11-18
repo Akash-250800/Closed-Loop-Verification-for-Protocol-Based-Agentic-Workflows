@@ -1,0 +1,41 @@
+REDO V2 METHOD FIX
+
+Why V1 was stopped
+------------------
+The original experiment.py generated a fresh LLM proposal independently for every
+policy/fault cell. Therefore a trial labelled with an injected transient fault could
+fail before that transient fault was ever injected because the model naturally
+generated malformed or multiple tool calls. This confounded natural generation
+reliability with controlled recovery ability.
+
+V2 design
+---------
+1. No-fault rows remain genuine end-to-end LLM runs.
+2. Before injected-fault experiments, the model generates a clean tool-call chain.
+   The chain must parse, pass schema/semantic validation, execute through MCP, and
+   satisfy the independent task criterion.
+3. The same validated LLM-generated proposal is then used as the common starting
+   point for controlled fault injection.
+4. Naive retry replays the identical failed proposal.
+5. Closed-loop GVEF may regenerate after structured feedback.
+6. A one-shot transient failure must therefore be recoverable by naive retry, while
+   a persistent corrupted call remains corrupted when blindly replayed.
+7. New results are written only to redo_v2_* folders. The interrupted V1 results are
+   left untouched.
+
+Validation performed before delivery
+------------------------------------
+- Both V2 Python files compile successfully.
+- 02_run_redo_experiments_v2.py --self-test: PASS.
+- 03_final_verify_redo_v2.py --self-test: PASS.
+- The final verifier passed a synthetic complete 1,268-row V2 matrix.
+- Controlled inventory mechanism test:
+    transient + naive retry -> PASS/recovered
+    type mismatch + naive retry -> FAIL
+    type mismatch + closed-loop -> PASS/recovered
+- Controlled multi-reference mechanism test:
+    transient_once + naive retry -> PASS/recovered with identical replay
+    persistent_corruption + naive retry -> FAIL
+    persistent_corruption + closed-loop -> PASS/recovered
+
+The real Ollama outcomes still have to be generated on the user's Windows machine.

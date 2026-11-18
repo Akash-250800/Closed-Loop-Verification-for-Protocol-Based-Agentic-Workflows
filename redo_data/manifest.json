@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-10-27T08:42:40.941212+00:00",
+  "purpose": "30-country real-data MCP redo preparation",
+  "source_files": {
+    "wikidata_presidential_record.csv": {
+      "sha256": "6ff6f1f73af0da487832fd88f59d412388c63c292d91bca9b0f7994851c942b7",
+      "rows": 30
+    },
+    "hdata_plt_cleaned.csv": {
+      "sha256": "57c57d1d78b1a31b813f947733fd6fad6bb1b8a66e29a5e3435603ece011c39f",
+      "rows": 10622
+    }
+  },
+  "provenance": {
+    "country_reference.csv": "Derived only from Wikidata QID/capital/country fields in wikidata_presidential_record.csv",
+    "wikidata_terms.csv": "Derived only from Wikidata fields in wikidata_presidential_record.csv",
+    "hdata_terms.csv": "Selected directly from hdata_plt_cleaned.csv using country, office, name, and test-date matching",
+    "benchmark_cases.csv": "One fixed, internally validated test case per country; target dates are strictly inside shared source intervals"
+  },
+  "countries": [
+    "FRA",
+    "DEU",
+    "ITA",
+    "PRT",
+    "IRL",
+    "AUT",
+    "FIN",
+    "POL",
+    "CZE",
+    "SVK",
+    "HUN",
+    "HRV",
+    "SVN",
+    "EST",
+    "LVA",
+    "LTU",
+    "GRC",
+    "CYP",
+    "ROU",
+    "USA",
+    "MEX",
+    "BRA",
+    "ARG",
+    "CHL",
+    "COL",
+    "PER",
+    "URY",
+    "PRY",
+    "ECU",
+    "PAN"
+  ],
+  "country_count": 30,
+  "agreement_counts": {
+    "EXACT_TWO_SOURCE": 26,
+    "ONE_DAY_END_BOUNDARY_RESOLVED": 2,
+    "SOURCE2_RIGHT_CENSORED_AT_2022": 2
+  },
+  "outputs": {
+    "country_reference.csv": {
+      "sha256": "ee291546cbb3a42fdab2694c56f402fd89649ab3e67ebb62a2a4997579e2d231",
+      "rows": 30,
+      "columns": [
+        "capital",
+        "country_code",
+        "country_name",
+        "country_qid",
+        "capital_qid"
+      ]
+    },
+    "wikidata_terms.csv": {
+      "sha256": "3e8587753d28c24530a0bd8be43a6fc1434919a677fbe3ab9082d958b9393bd7",
+      "rows": 30,
+      "columns": [
+        "country_code",
+        "country_name",
+        "office_qid",
+        "president_qid",
+        "president_name",
+        "start_date",
+        "end_date",
+        "wikidata_source_path"
+      ]
+    },
+    "hdata_terms.csv": {
+      "sha256": "7ffe5fb27350c57917911af04fef02d73c6159fd602dda9843f0e8aa048e62e2",
+      "rows": 30,
+      "columns": [
+        "country_code",
+        "country_name",
+        "president_name",
+        "start_date",
+        "end_date",
+        "office_title",
+        "territory_code",
+        "hdata_country_id"
+      ]
+    },
+    "benchmark_cases.csv": {
+      "sha256": "61028ef98a3d9e41acabdd9f24f8931965be4990c7036abbef42cf7752ca4af4",
+      "rows": 30,
+      "columns": [
+        "task_id",
+        "country_code",
+        "country_name",
+        "capital",
+        "target_date",
+        "gold_president_name",
+        "wikidata_president_name",
+        "hdata_president_name",
+        "agreement_type"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+﻿condition,scheduled_retry_budget,n,completed,completion_rate,mean_retries,mean_latency_seconds,mean_tokens
+closed_loop,0,16,1,0.0625,0,1.664962375,178.5625
+closed_loop,1,16,15,0.9375,0.9375,9.660371875,1012.625
+closed_loop,2,16,15,0.9375,1,5.506529375,1087.4375
+closed_loop,3,16,15,0.9375,1.0625,6.61688,1175.125
+closed_loop,4,16,15,0.9375,1.125,7.4697073750000005,1279.0
+naive_retry,0,16,0,0.0,0,0.9268685,86.375
+naive_retry,1,16,6,0.375,1,0.91075275,86.375
+naive_retry,2,16,6,0.375,1.625,1.0486061875,86.375
+naive_retry,3,16,6,0.375,2.25,1.2394728125,86.375
+naive_retry,4,16,6,0.375,2.875,1.136939125,86.375
+no_verification,0,16,1,0.0625,0,2.8167631875,178.5625

@@ -1,0 +1,167 @@
+{
+  "model": "qwen2.5:1.5b",
+  "purpose": "Canonical valid tool-call chains used only to isolate controlled fault-recovery behavior. No-fault cells remain natural LLM runs.",
+  "created_utc": "2026-10-27T14:17:43.215504+00:00",
+  "tasks": {
+    "inventory_pen": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"PEN\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 3, \"sku\": \"PEN\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"PEN\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_notebook": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"NOTEBOOK\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 2, \"sku\": \"NOTEBOOK\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"NOTEBOOK\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_usb": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"USB\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 4, \"sku\": \"USB\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"USB\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_mouse": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"MOUSE\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 1, \"sku\": \"MOUSE\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"MOUSE\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_cable": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"CABLE\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 6, \"sku\": \"CABLE\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"CABLE\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_keyboard": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"KEYBOARD\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 2, \"sku\": \"KEYBOARD\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"KEYBOARD\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_monitor": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"MONITOR\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 1, \"sku\": \"MONITOR\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"MONITOR\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_lamp": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"LAMP\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 5, \"sku\": \"LAMP\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"LAMP\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_stapler": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"STAPLER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 3, \"sku\": \"STAPLER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"STAPLER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_folder": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"FOLDER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 4, \"sku\": \"FOLDER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"FOLDER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_charger": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"CHARGER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 2, \"sku\": \"CHARGER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"CHARGER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_webcam": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"WEBCAM\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 1, \"sku\": \"WEBCAM\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"WEBCAM\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_headset": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"HEADSET\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 2, \"sku\": \"HEADSET\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"HEADSET\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_router": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"ROUTER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 1, \"sku\": \"ROUTER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"ROUTER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_tablet": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"TABLET\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 1, \"sku\": \"TABLET\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"TABLET\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_paper": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"PAPER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 10, \"sku\": \"PAPER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"PAPER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_battery": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"BATTERY\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 4, \"sku\": \"BATTERY\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"BATTERY\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_adapter": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"ADAPTER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 2, \"sku\": \"ADAPTER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"ADAPTER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_mic": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"MIC\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 1, \"sku\": \"MIC\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"MIC\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    },
+    "inventory_speaker": {
+      "proposals": [
+        "{\"args\": {\"sku\": \"SPEAKER\"}, \"tool\": \"check_stock\"}",
+        "{\"args\": {\"quantity\": 3, \"sku\": \"SPEAKER\"}, \"tool\": \"reserve_stock\"}",
+        "{\"args\": {\"sku\": \"SPEAKER\"}, \"tool\": \"check_stock\"}"
+      ],
+      "seed_type": "canonical_task_specification"
+    }
+  }
+}

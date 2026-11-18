@@ -1,0 +1,28 @@
+{
+  "experiment": "feedback_format_ablation_final",
+  "model": "qwen2.5:1.5b",
+  "task_count": 3,
+  "faults": [
+    "none",
+    "malformed_json",
+    "type_mismatch",
+    "stale_schema",
+    "transient_api",
+    "transient_timeout",
+    "transient_rate_limit",
+    "wrong_tool"
+  ],
+  "feedback_formats": [
+    "raw_trace",
+    "schema_diff",
+    "natural_language"
+  ],
+  "retry_budget": 2,
+  "method_note": "Injected-fault cells use canonical task-specification control seeds.",
+  "total_planned_trials": 72,
+  "plan_signature": "9e85f63b26dfb9516afe2bc388d753562f0b86f2d0322c806d990807af039f17",
+  "completion_status": "complete",
+  "saved_rows": 72,
+  "start_or_check_utc": "2026-10-27T14:17:44.809269+00:00",
+  "finish_utc": "2026-10-27T14:17:45.465527+00:00"
+}

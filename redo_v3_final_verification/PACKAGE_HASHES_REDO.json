@@ -1,0 +1,197 @@
+{
+  "created_utc": "2026-10-28T07:45:18.481980+00:00",
+  "files": {
+    "agents.py": {
+      "sha256": "6b3887bb263598bb0bb514def60f31891ec117b912340c46391ec1154bb3db7e",
+      "bytes": 8881
+    },
+    "experiment.py": {
+      "sha256": "65f25bd72f85b9900a938ed9ba5ec48ac3334594055647e0a238b7b61d86c92b",
+      "bytes": 21324
+    },
+    "verification.py": {
+      "sha256": "90afb0576935feff7260b47c5e4772bc2b4be9a2e0877fa5c7be3b4a8d1faaff",
+      "bytes": 7799
+    },
+    "feedback.py": {
+      "sha256": "086637305b32585d9eb0db8165a74215547037953e6b4128b3ea474b5123e9bb",
+      "bytes": 1289
+    },
+    "taxonomy.py": {
+      "sha256": "bb7c40b1eddfa78056b6044867629101ba95e4607ee2ceefff7879bbd48943d1",
+      "bytes": 3020
+    },
+    "benchmarks.py": {
+      "sha256": "3afa8f41b4b66d41082b229a3c4eb26949c555e4e65feead741eebacf9d36eac",
+      "bytes": 14536
+    },
+    "server.py": {
+      "sha256": "723c15a4f7fd75b9eb4e93ac2fdeaaa357cc92087a8633dfc6652aa9a4e298fa",
+      "bytes": 1487
+    },
+    "requirements.txt": {
+      "sha256": "f804e5ba48f51a39e6baa747a2a2c76a53a97f25834e8d25f4d1eeb3f79c742b",
+      "bytes": 103
+    },
+    "wikidata_presidential_record.csv": {
+      "sha256": "6ff6f1f73af0da487832fd88f59d412388c63c292d91bca9b0f7994851c942b7",
+      "bytes": 6040
+    },
+    "hdata_plt_cleaned.csv": {
+      "sha256": "57c57d1d78b1a31b813f947733fd6fad6bb1b8a66e29a5e3435603ece011c39f",
+      "bytes": 3392271
+    },
+    "01_prepare_redo_data.py": {
+      "sha256": "7d332de9c77be1637541a79f36bdb67673553542691fd05dd27a958be5f31bdc",
+      "bytes": 16938
+    },
+    "02_run_redo_experiments_FINAL.py": {
+      "sha256": "a5ce6d5f43a761a4404667ed9bab3924d2763aa0d71ff60d6be02d3f1a7be137",
+      "bytes": 75915
+    },
+    "03_final_verify_redo_FINAL.py": {
+      "sha256": "a4b51d3e0b6f1bd38752f63c2d745de21956c21a586d1b525e4cabc944b61459",
+      "bytes": 28792
+    },
+    "redo_data\\benchmark_cases.csv": {
+      "sha256": "61028ef98a3d9e41acabdd9f24f8931965be4990c7036abbef42cf7752ca4af4",
+      "bytes": 3500
+    },
+    "redo_data\\country_reference.csv": {
+      "sha256": "ee291546cbb3a42fdab2694c56f402fd89649ab3e67ebb62a2a4997579e2d231",
+      "bytes": 1027
+    },
+    "redo_data\\hdata_terms.csv": {
+      "sha256": "7ffe5fb27350c57917911af04fef02d73c6159fd602dda9843f0e8aa048e62e2",
+      "bytes": 2242
+    },
+    "redo_data\\wikidata_terms.csv": {
+      "sha256": "3e8587753d28c24530a0bd8be43a6fc1434919a677fbe3ab9082d958b9393bd7",
+      "bytes": 2295
+    },
+    "redo_data\\manifest.json": {
+      "sha256": "b8ceb7e882d54e811dd4cc867e611e84e5152b29827c5736b637317ea8d8a024",
+      "bytes": 2968
+    },
+    "redo_data\\inventory_control_seeds.json": {
+      "sha256": "1c31257be0ed6e0cc4d67ea2fbcffbd185a508bc0237b4ae2a7a9d90644efd21",
+      "bytes": 7340
+    },
+    "redo_data\\multiref_control_seeds.json": {
+      "sha256": "2346d34f3caafed561381918afbf7628241956add117d2414bc96a6f16d94073",
+      "bytes": 23865
+    },
+    "redo_v3_inventory_baseline\\manifest.json": {
+      "sha256": "cb5c9b9cefd2f8114f74bc555235245e3a670159f37c77339683fac6563c1947",
+      "bytes": 946
+    },
+    "redo_v3_inventory_baseline\\trials.csv": {
+      "sha256": "c89edb91977bee38a7ed21b7634ac2a58f5098d63604eaf7bc8b7d552d77812a",
+      "bytes": 126534
+    },
+    "redo_v3_inventory_baseline\\summary.csv": {
+      "sha256": "76624acd20e11ea8bc89389b2bbb23a90cd36dd6107c375574e6f2c9fb8f0d8e",
+      "bytes": 1663
+    },
+    "redo_v3_inventory_baseline\\attempt_events.jsonl": {
+      "sha256": "fdb49806b513f751aa388ab8ea4e3dee01b44e214a8ac2caf16d71f778f5ea28",
+      "bytes": 1469110
+    },
+    "redo_v3_feedback\\manifest.json": {
+      "sha256": "97cd986241826291754423d3058e92c79bbdbc1fc1e5ed27c6712947b09b8f98",
+      "bytes": 793
+    },
+    "redo_v3_feedback\\trials.csv": {
+      "sha256": "c2b00b63bb7f1b14f25e28062242593d301cef8df6e56b6d150b3c53efd41120",
+      "bytes": 14842
+    },
+    "redo_v3_feedback\\summary.csv": {
+      "sha256": "c091bdbf2a61890c5a1903ad6af13bbdea87e97301f4f399e2b44bbe32e60c85",
+      "bytes": 1761
+    },
+    "redo_v3_feedback\\attempt_events.jsonl": {
+      "sha256": "602041941e035a90b47950a72d4bae224f1adc925d5673d314d5766c9fcbe1c4",
+      "bytes": 249437
+    },
+    "redo_v3_retry\\manifest.json": {
+      "sha256": "7a230eb1a92e1768d56496c053477183ea19139958ff469113ebec0e17af40a1",
+      "bytes": 821
+    },
+    "redo_v3_retry\\trials.csv": {
+      "sha256": "b6c3b156e5f873e0d77fc11d8bb1d7ca481ea9635e28a65b39a852759b760bd5",
+      "bytes": 45566
+    },
+    "redo_v3_retry\\records.json": {
+      "sha256": "c281c376efe957bbcb3203c6008fd33905424159e974c5e2875a0a58177a6e77",
+      "bytes": 737373
+    },
+    "redo_v3_retry\\summary.csv": {
+      "sha256": "e9ac442794346aaa8c963a0eb893d1d1e8ab500b182a2ada2c4dd40d6859d539",
+      "bytes": 5707
+    },
+    "redo_v3_retry\\attempt_events.jsonl": {
+      "sha256": "b6e4ead2041f6beeec5ffbda1a81c6ee09f0077228eed2d6bb4f2ea1248c8322",
+      "bytes": 590177
+    },
+    "redo_v3_bfcl\\manifest.json": {
+      "sha256": "0fda0f1fdde7d29c0c0e8d4a82ebf9c396bf5475519b70f85ba7a25c5c8a12e2",
+      "bytes": 1271
+    },
+    "redo_v3_bfcl\\trials.csv": {
+      "sha256": "e809bd941ed9d3115a08de7575a3e23a6afae71d2ea270ad146ce5b70a20e37f",
+      "bytes": 12190
+    },
+    "redo_v3_bfcl\\summary.csv": {
+      "sha256": "1f3f60810b3b11b5c8e4209a18d3e27ccf7b680424c19aa6e49543cc5431b11f",
+      "bytes": 402
+    },
+    "redo_v3_bfcl\\attempt_events.jsonl": {
+      "sha256": "6b27a010a48ec3deb0f124d205517a6f5f7b2df84cbcf7c0600114d1ad6b18e9",
+      "bytes": 135001
+    },
+    "redo_v3_multiref\\manifest.json": {
+      "sha256": "f2627d741b58a5241a10e7d80647fa528a24b60d90d29eb324e9a2a4d0fddb12",
+      "bytes": 1216
+    },
+    "redo_v3_multiref\\trials.csv": {
+      "sha256": "a1cd2951b8d177e32c5a2dd074d167e2586666fd99fffbc32b50a192ece82d34",
+      "bytes": 127849
+    },
+    "redo_v3_multiref\\records.json": {
+      "sha256": "b4a6f92f9d2b8dc872ac374eeb5178a0741fe35db9b820e7e5c8979eb83097a6",
+      "bytes": 2169078
+    },
+    "redo_v3_multiref\\summary.csv": {
+      "sha256": "a027225e7b5ae4526f4a3ebfcc266c68be8b98c6940385d17ac530003a4e182a",
+      "bytes": 1251
+    },
+    "redo_v3_multiref\\attempt_events.jsonl": {
+      "sha256": "d58434595df4b9315854dde5d2a85e7868124da9b6a2bf771a43491e2513b2b3",
+      "bytes": 1663282
+    },
+    "redo_v3_multiref\\NAIVE_RETRY_MECHANISM.txt": {
+      "sha256": "aea7783bd6e17e315dcfad153486a3dcd5a4d617109e1e4140687e2647eeb2da",
+      "bytes": 566
+    },
+    "redo_v3_two_agent\\manifest.json": {
+      "sha256": "8fa2d01a85d2556956b0800da3cc45235185199476fbfa472223c8cfdc92856a",
+      "bytes": 888
+    },
+    "redo_v3_two_agent\\trials.csv": {
+      "sha256": "d5a34e2225849c8aec1725fa9ca35e79ac04048c7f0bf7ad14ee59069a64e6c8",
+      "bytes": 10091
+    },
+    "redo_v3_two_agent\\records.json": {
+      "sha256": "1e3408d7f0a3a73169f159279347eb42d198403f7490cce4e3351ff8f2f9a43c",
+      "bytes": 146468
+    },
+    "redo_v3_two_agent\\summary.csv": {
+      "sha256": "d76de27b6d0b2ad7c3edb5dd6e9a3ce7c132b5339500d38aa68b4702c08dc814",
+      "bytes": 203
+    },
+    "redo_v3_two_agent\\attempt_events.jsonl": {
+      "sha256": "3ba2df452161dd0878e5ea50749d72484c8526d11a257d06efa6f8d8db349071",
+      "bytes": 112800
+    }
+  }
+}

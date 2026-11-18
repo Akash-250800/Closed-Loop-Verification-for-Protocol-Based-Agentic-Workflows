@@ -1,0 +1,16 @@
+﻿condition,fault,feedback_format,scheduled_retry_budget,n,completion_rate,mean_retries,mean_latency_seconds
+closed_loop,none,schema_diff,,30,0.16666666666666666,1.6666666666666667,54.762988533333335
+closed_loop,persistent_corruption,schema_diff,,30,1.0,1.5,20.858857966666665
+closed_loop,transient_once,schema_diff,,30,1.0,1.5,21.334371766666667
+closed_loop,type_mismatch,schema_diff,,30,0.9666666666666667,1.5333333333333334,23.750433833333332
+closed_loop,wrong_tool,schema_diff,,30,0.9666666666666667,1.6,24.3672527
+naive_retry,none,not_applicable,,30,0.2,1.6,20.474970433333333
+naive_retry,persistent_corruption,not_applicable,,30,0.0,2,0.025491166666666665
+naive_retry,transient_once,not_applicable,,30,1.0,1,0.0093559
+naive_retry,type_mismatch,not_applicable,,30,0.0,2,0.0112215
+naive_retry,wrong_tool,not_applicable,,30,0.0,2,0.0098381
+no_verification,none,not_applicable,,30,0.16666666666666666,0,102.03173393333333
+no_verification,persistent_corruption,not_applicable,,30,0.0,0,0.017064366666666667
+no_verification,transient_once,not_applicable,,30,0.0,0,0.005905333333333334
+no_verification,type_mismatch,not_applicable,,30,0.0,0,0.008126166666666667
+no_verification,wrong_tool,not_applicable,,30,0.0,0,0.008077333333333334

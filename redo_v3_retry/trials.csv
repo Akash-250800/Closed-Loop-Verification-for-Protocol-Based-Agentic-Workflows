@@ -1,0 +1,249 @@
+﻿timestamp_utc,task_id,source,mode,model,replicate,condition,fault,feedback_format,retry_budget,task_completed,completed_steps,injected_fault,injected_fault_recovered,model_proposals,spontaneous_preinjection_errors,spontaneous_categories,tool_attempts,retry_count,circuit_breaker_open,latency_seconds,total_tokens,token_measurement_complete,last_error,controlled_seed,seed_source,scheduled_retry_budget,effective_retry_budget,online_model_proposals
+2026-10-27T11:12:44.478922+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,none,not_applicable,0,1,3,0,0,3,0,[],3,0,0,34.305018,2165,1,,0,natural_end_to_end,0,0,
+2026-10-27T11:12:55.253316+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,0,0,0,0,0,1,1,['malformed_payload'],1,0,1,10.723641,690,1,Extra data: line 2 column 1 (char 53),0,natural_end_to_end,0,0,
+2026-10-27T11:13:18.279111+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,0,1,3,0,0,3,0,[],3,0,0,22.987695,2165,1,,0,natural_end_to_end,0,0,
+2026-10-27T11:13:29.236874+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,1,0,0,0,0,1,1,['malformed_payload'],2,1,1,10.712959,690,1,Extra data: line 2 column 1 (char 53),0,natural_end_to_end,1,1,
+2026-10-27T11:13:53.187316+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,1,1,3,0,0,3,0,[],3,0,0,23.902465,2165,1,,0,natural_end_to_end,1,1,
+2026-10-27T11:14:04.125386+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,2,0,0,0,0,1,1,['malformed_payload'],3,2,1,10.889528,690,1,Extra data: line 2 column 1 (char 53),0,natural_end_to_end,2,2,
+2026-10-27T11:14:32.856252+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,2,1,3,0,0,3,0,[],3,0,0,28.690878,2165,1,,0,natural_end_to_end,2,2,
+2026-10-27T11:14:47.107909+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,3,0,0,0,0,1,1,['malformed_payload'],4,3,1,14.188736,690,1,Extra data: line 2 column 1 (char 53),0,natural_end_to_end,3,3,
+2026-10-27T11:15:12.192302+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,3,1,3,0,0,3,0,[],3,0,0,25.02583,2165,1,,0,natural_end_to_end,3,3,
+2026-10-27T11:15:24.321860+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,4,0,0,0,0,1,1,['malformed_payload'],5,4,1,12.081806,690,1,Extra data: line 2 column 1 (char 53),0,natural_end_to_end,4,4,
+2026-10-27T11:15:51.531656+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,4,1,3,0,0,3,0,[],3,0,0,27.152237,2165,1,,0,natural_end_to_end,4,4,
+2026-10-27T11:15:51.594170+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,malformed_json,not_applicable,0,0,1,1,0,,,,,0,,0.008519,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,0,0,0
+2026-10-27T11:15:51.656680+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,0,0,1,1,0,,,,,0,,0.008385,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,0,0,0
+2026-10-27T11:15:51.719174+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,0,0,1,1,0,,,,,0,,0.004995,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,0,0,0
+2026-10-27T11:15:51.750423+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,1,0,1,1,0,,,,,1,,0.005778,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,1,1,0
+2026-10-27T11:16:07.658961+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,1,1,3,1,1,,,,,1,,15.862771,907,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:16:07.721480+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,2,0,1,1,0,,,,,2,,0.010229,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,2,2,0
+2026-10-27T11:16:09.632120+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,2,1,3,1,1,,,,,1,,1.843283,907,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:16:09.694643+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,3,0,1,1,0,,,,,3,,0.011177,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,3,3,0
+2026-10-27T11:16:11.495722+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,3,1,3,1,1,,,,,1,,1.73618,907,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:16:11.573866+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,4,0,1,1,0,,,,,4,,0.012987,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,4,4,0
+2026-10-27T11:16:13.304991+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,4,1,3,1,1,,,,,1,,1.663744,907,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:16:13.383134+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,type_mismatch,not_applicable,0,0,1,1,0,,,,,0,,0.009636,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,0,0,0
+2026-10-27T11:16:13.635102+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,0,0,1,1,0,,,,,0,,0.019054,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,0,0,0
+2026-10-27T11:16:13.713248+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,0,0,1,1,0,,,,,0,,0.006217,0,1,'NOT_A_NUMBER' is not of type 'integer',1,canonical_task_specification,0,0,0
+2026-10-27T11:16:13.776782+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,1,0,1,1,0,,,,,1,,0.010743,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,1,1,0
+2026-10-27T11:16:22.204325+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,1,1,3,1,1,,,,,1,,8.375605,908,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:16:22.282469+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,2,0,1,1,0,,,,,2,,0.010622,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,2,2,0
+2026-10-27T11:16:24.454001+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,2,1,3,1,1,,,,,1,,2.101147,908,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:16:24.532142+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,3,0,1,1,0,,,,,3,,0.013369,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,3,3,0
+2026-10-27T11:16:26.936421+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,3,1,3,1,1,,,,,1,,2.347471,908,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:16:27.014565+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,4,0,1,1,0,,,,,4,,0.014609,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,4,4,0
+2026-10-27T11:16:29.341641+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,4,1,3,1,1,,,,,1,,2.255755,908,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:16:29.419787+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,stale_schema,not_applicable,0,0,1,1,0,,,,,0,,0.007147,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'PEN', 'quantity_old': 3}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,0,0,0
+2026-10-27T11:16:29.497907+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,0,0,1,1,0,,,,,0,,0.007405,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'PEN', 'quantity_old': 3}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,0,0,0
+2026-10-27T11:16:29.560406+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,0,0,1,1,0,,,,,0,,0.004504,0,1,'quantity' is a required property,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:29.607287+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,1,0,1,1,0,,,,,1,,0.005781,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'PEN', 'quantity_old': 3}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,1,1,0
+2026-10-27T11:16:37.739061+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,1,1,3,1,1,,,,,1,,8.08943,899,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:16:37.817207+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,2,0,1,1,0,,,,,2,,0.010912,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'PEN', 'quantity_old': 3}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,2,2,0
+2026-10-27T11:16:40.021040+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,2,1,3,1,1,,,,,1,,2.123052,899,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:16:40.099183+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,3,0,1,1,0,,,,,3,,0.011417,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'PEN', 'quantity_old': 3}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,3,3,0
+2026-10-27T11:16:42.428347+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,3,1,3,1,1,,,,,1,,2.261026,899,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:16:42.506487+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,4,0,1,1,0,,,,,4,,0.012302,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'PEN', 'quantity_old': 3}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,4,4,0
+2026-10-27T11:16:44.636410+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,4,1,3,1,1,,,,,1,,2.051591,899,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:16:44.714554+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,transient_api,not_applicable,0,0,1,1,0,,,,,0,,0.005373,0,1,Injected temporary upstream HTTP 503 failure,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:44.777054+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,0,0,1,1,0,,,,,0,,0.005185,0,1,Injected temporary upstream HTTP 503 failure,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:44.839552+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,0,0,1,1,0,,,,,0,,0.003026,0,1,Injected temporary upstream HTTP 503 failure,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:44.870800+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,1,1,3,1,1,,,,,1,,0.004823,0,1,,1,canonical_task_specification,1,1,0
+2026-10-27T11:16:51.363270+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,1,1,3,1,1,,,,,1,,6.442518,865,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:16:51.425785+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,2,1,3,1,1,,,,,1,,0.007982,0,1,,1,canonical_task_specification,2,2,0
+2026-10-27T11:16:53.437719+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,2,1,3,1,1,,,,,1,,1.940044,865,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:16:53.515865+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,3,1,3,1,1,,,,,1,,0.008376,0,1,,1,canonical_task_specification,3,3,0
+2026-10-27T11:16:55.502260+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,3,1,3,1,1,,,,,1,,1.924681,865,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:16:55.580412+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,4,1,3,1,1,,,,,1,,0.008141,0,1,,1,canonical_task_specification,4,4,0
+2026-10-27T11:16:57.742843+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,4,1,3,1,1,,,,,1,,2.079402,865,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:16:57.805363+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,transient_timeout,not_applicable,0,0,1,1,0,,,,,0,,0.004821,0,1,Injected upstream network timeout,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:57.883487+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,0,0,1,1,0,,,,,0,,0.00553,0,1,Injected upstream network timeout,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:57.945980+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,0,0,1,1,0,,,,,0,,0.003536,0,1,Injected upstream network timeout,1,canonical_task_specification,0,0,0
+2026-10-27T11:16:57.992861+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,1,1,3,1,1,,,,,1,,0.005064,0,1,,1,canonical_task_specification,1,1,0
+2026-10-27T11:17:03.463285+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,1,1,3,1,1,,,,,1,,5.422933,849,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:17:03.557054+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,2,1,3,1,1,,,,,1,,0.008865,0,1,,1,canonical_task_specification,2,2,0
+2026-10-27T11:17:05.564414+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,2,1,3,1,1,,,,,1,,1.94293,849,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:17:05.642559+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,3,1,3,1,1,,,,,1,,0.007765,0,1,,1,canonical_task_specification,3,3,0
+2026-10-27T11:17:07.701854+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,3,1,3,1,1,,,,,1,,1.971746,849,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:17:07.779998+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,4,1,3,1,1,,,,,1,,0.007968,0,1,,1,canonical_task_specification,4,4,0
+2026-10-27T11:17:09.876015+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,4,1,3,1,1,,,,,1,,2.03099,849,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:17:09.954156+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,transient_rate_limit,not_applicable,0,0,1,1,0,,,,,0,,0.00479,0,1,Injected upstream API rate limit,1,canonical_task_specification,0,0,0
+2026-10-27T11:17:10.032281+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,0,0,1,1,0,,,,,0,,0.00483,0,1,Injected upstream API rate limit,1,canonical_task_specification,0,0,0
+2026-10-27T11:17:10.094778+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,0,0,1,1,0,,,,,0,,0.003014,0,1,Injected upstream API rate limit,1,canonical_task_specification,0,0,0
+2026-10-27T11:17:10.141655+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,1,1,3,1,1,,,,,1,,0.004438,0,1,,1,canonical_task_specification,1,1,0
+2026-10-27T11:17:16.003777+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,1,1,3,1,1,,,,,1,,5.823306,857,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:17:16.175666+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,2,1,3,1,1,,,,,1,,0.011906,0,1,,1,canonical_task_specification,2,2,0
+2026-10-27T11:17:18.738575+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,2,1,3,1,1,,,,,1,,2.488069,857,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:17:18.832345+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,3,1,3,1,1,,,,,1,,0.00743,0,1,,1,canonical_task_specification,3,3,0
+2026-10-27T11:17:21.434482+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,3,1,3,1,1,,,,,1,,2.524159,857,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:17:21.512622+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,4,1,3,1,1,,,,,1,,0.00853,0,1,,1,canonical_task_specification,4,4,0
+2026-10-27T11:17:23.498026+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,4,1,3,1,1,,,,,1,,1.909981,857,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:17:23.591797+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,wrong_tool,not_applicable,0,0,1,1,0,,,,,0,,0.006973,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,0,0,0
+2026-10-27T11:17:23.685543+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,0,0,1,1,0,,,,,0,,0.007171,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,0,0,0
+2026-10-27T11:17:23.732417+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,0,0,1,1,0,,,,,0,,0.003612,0,1,"Selected check_stock, but the current task requires reserve_stock",1,canonical_task_specification,0,0,0
+2026-10-27T11:17:23.779293+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,1,0,1,1,0,,,,,1,,0.004952,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,1,1,0
+2026-10-27T11:17:30.695268+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,1,1,3,1,1,,,,,1,,6.855103,878,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:17:30.773922+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,2,0,1,1,0,,,,,2,,0.009629,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,2,2,0
+2026-10-27T11:17:32.943913+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,2,1,3,1,1,,,,,1,,2.07256,878,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:17:33.022065+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,3,0,1,1,0,,,,,3,,0.010806,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,3,3,0
+2026-10-27T11:17:35.179322+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,3,1,3,1,1,,,,,1,,2.076335,878,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:17:35.273087+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,4,0,1,1,0,,,,,4,,0.012105,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,4,4,0
+2026-10-27T11:17:37.385287+00:00,inventory_pen,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,4,1,3,1,1,,,,,1,,2.017452,878,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:17:48.134833+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,none,not_applicable,0,0,0,0,0,1,1,['malformed_payload'],1,0,1,10.668947,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,0,0,
+2026-10-27T11:17:52.225734+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,0,0,0,0,0,1,1,['malformed_payload'],1,0,1,4.013589,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,0,0,
+2026-10-27T11:17:55.893902+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,0,0,0,0,0,1,1,['malformed_payload'],1,0,1,3.594519,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,0,0,
+2026-10-27T11:17:59.755740+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,1,0,0,0,0,1,1,['malformed_payload'],2,1,1,3.779778,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,1,1,
+2026-10-27T11:18:16.455640+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,1,0,0,0,0,2,2,"['malformed_payload', 'malformed_payload']",2,1,1,16.604335,1690,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,1,1,
+2026-10-27T11:18:22.288376+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,2,0,0,0,0,1,1,['malformed_payload'],3,2,1,5.747735,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,2,2,
+2026-10-27T11:18:52.932238+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,2,0,0,0,0,3,3,"['malformed_payload', 'malformed_payload', 'malformed_payload']",3,2,1,30.556461,2887,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,2,2,
+2026-10-27T11:18:58.515486+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,3,0,0,0,0,1,1,['malformed_payload'],4,3,1,5.486022,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,3,3,
+2026-10-27T11:19:49.091817+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,3,0,0,0,0,4,4,"['malformed_payload', 'malformed_payload', 'malformed_payload', 'malformed_payload']",4,3,1,50.477198,4290,1,tool must be a string and args an object,0,natural_end_to_end,3,3,
+2026-10-27T11:19:55.122131+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,none,not_applicable,4,0,0,0,0,1,1,['malformed_payload'],5,4,1,5.948021,692,1,Extra data: line 2 column 1 (char 58),0,natural_end_to_end,4,4,
+2026-10-27T11:20:58.247029+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,none,schema_diff,4,0,0,0,0,5,5,"['malformed_payload', 'malformed_payload', 'malformed_payload', 'malformed_payload', 'malformed_payload']",5,4,1,63.021742,5952,1,tool must be a string and args an object,0,natural_end_to_end,4,4,
+2026-10-27T11:20:58.340798+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,malformed_json,not_applicable,0,0,1,1,0,,,,,0,,0.00686,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,0,0,0
+2026-10-27T11:20:58.434554+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,0,0,1,1,0,,,,,0,,0.006536,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,0,0,0
+2026-10-27T11:20:58.497048+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,0,0,1,1,0,,,,,0,,0.00418,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,0,0,0
+2026-10-27T11:20:58.543920+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,1,0,1,1,0,,,,,1,,0.00453,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,1,1,0
+2026-10-27T11:21:12.100807+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,1,1,3,1,1,,,,,1,,13.501356,910,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:21:12.194577+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,2,0,1,1,0,,,,,2,,0.009345,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,2,2,0
+2026-10-27T11:21:13.910252+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,2,1,3,1,1,,,,,1,,1.623854,910,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:21:14.082128+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,3,0,1,1,0,,,,,3,,0.022408,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,3,3,0
+2026-10-27T11:21:15.889556+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,3,1,3,1,1,,,,,1,,1.733633,910,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:21:15.983324+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,malformed_json,not_applicable,4,0,1,1,0,,,,,4,,0.014047,0,1,Expecting value: line 1 column 34 (char 33),1,canonical_task_specification,4,4,0
+2026-10-27T11:21:17.539297+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,malformed_json,schema_diff,4,1,3,1,1,,,,,1,,1.462343,910,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:21:17.633066+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,type_mismatch,not_applicable,0,0,1,1,0,,,,,0,,0.006966,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,0,0,0
+2026-10-27T11:21:17.726813+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,0,0,1,1,0,,,,,0,,0.00481,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,0,0,0
+2026-10-27T11:21:17.789315+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,0,0,1,1,0,,,,,0,,0.004083,0,1,'NOT_A_NUMBER' is not of type 'integer',1,canonical_task_specification,0,0,0
+2026-10-27T11:21:17.851829+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,1,0,1,1,0,,,,,1,,0.005217,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,1,1,0
+2026-10-27T11:21:27.017309+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,1,1,3,1,1,,,,,1,,9.095627,911,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:21:27.128250+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,2,0,1,1,0,,,,,2,,0.013669,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,2,2,0
+2026-10-27T11:21:29.289212+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,2,1,3,1,1,,,,,1,,2.073884,911,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:21:29.414230+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,3,0,1,1,0,,,,,3,,0.01126,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,3,3,0
+2026-10-27T11:21:32.256998+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,3,1,3,1,1,,,,,1,,2.769075,911,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:21:32.398746+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,type_mismatch,not_applicable,4,0,1,1,0,,,,,4,,0.015021,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='NOT_A_NUMBER', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/int_parsing",1,canonical_task_specification,4,4,0
+2026-10-27T11:21:34.761443+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,type_mismatch,schema_diff,4,1,3,1,1,,,,,1,,2.266821,911,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:21:34.870836+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,stale_schema,not_applicable,0,0,1,1,0,,,,,0,,0.007866,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'NOTEBOOK', 'quantity_old': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,0,0,0
+2026-10-27T11:21:34.964585+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,0,0,1,1,0,,,,,0,,0.0047,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'NOTEBOOK', 'quantity_old': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,0,0,0
+2026-10-27T11:21:35.027080+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,0,0,1,1,0,,,,,0,,0.004364,0,1,'quantity' is a required property,1,canonical_task_specification,0,0,0
+2026-10-27T11:21:35.089582+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,1,0,1,1,0,,,,,1,,0.005901,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'NOTEBOOK', 'quantity_old': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,1,1,0
+2026-10-27T11:21:42.900207+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,1,1,3,1,1,,,,,1,,7.758093,902,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:21:43.009607+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,2,0,1,1,0,,,,,2,,0.00935,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'NOTEBOOK', 'quantity_old': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,2,2,0
+2026-10-27T11:21:45.302131+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,2,1,3,1,1,,,,,1,,2.19576,902,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:21:45.411527+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,3,0,1,1,0,,,,,3,,0.012187,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'NOTEBOOK', 'quantity_old': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,3,3,0
+2026-10-27T11:21:47.745629+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,3,1,3,1,1,,,,,1,,2.227735,902,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:21:47.870650+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,stale_schema,not_applicable,4,0,1,1,0,,,,,4,,0.014497,0,1,"Error executing tool reserve_stock: 1 validation error for reserve_stockArguments
+quantity
+  Field required [type=missing, input_value={'sku': 'NOTEBOOK', 'quantity_old': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/missing",1,canonical_task_specification,4,4,0
+2026-10-27T11:21:50.595040+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,stale_schema,schema_diff,4,1,3,1,1,,,,,1,,2.633796,902,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:21:50.704439+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,transient_api,not_applicable,0,0,1,1,0,,,,,0,,0.006057,0,1,Injected temporary upstream HTTP 503 failure,1,canonical_task_specification,0,0,0
+2026-10-27T11:21:50.798178+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,0,0,1,1,0,,,,,0,,0.003162,0,1,Injected temporary upstream HTTP 503 failure,1,canonical_task_specification,0,0,0
+2026-10-27T11:21:50.860684+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,0,0,1,1,0,,,,,0,,0.004988,0,1,Injected temporary upstream HTTP 503 failure,1,canonical_task_specification,0,0,0
+2026-10-27T11:21:50.923181+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,1,1,3,1,1,,,,,1,,0.005134,0,1,,1,canonical_task_specification,1,1,0
+2026-10-27T11:21:58.419023+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,1,1,3,1,1,,,,,1,,7.424577,868,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:21:58.528416+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,2,1,3,1,1,,,,,1,,0.009326,0,1,,1,canonical_task_specification,2,2,0
+2026-10-27T11:22:00.840458+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,2,1,3,1,1,,,,,1,,2.22538,868,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:22:00.949851+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,3,1,3,1,1,,,,,1,,0.01059,0,1,,1,canonical_task_specification,3,3,0
+2026-10-27T11:22:03.219781+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,3,1,3,1,1,,,,,1,,2.156895,868,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:22:03.313550+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_api,not_applicable,4,1,3,1,1,,,,,1,,0.008399,0,1,,1,canonical_task_specification,4,4,0
+2026-10-27T11:22:05.544685+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_api,schema_diff,4,1,3,1,1,,,,,1,,2.133831,868,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:22:05.747829+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,transient_timeout,not_applicable,0,0,1,1,0,,,,,0,,0.004717,0,1,Injected upstream network timeout,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:05.841579+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,0,0,1,1,0,,,,,0,,0.005022,0,1,Injected upstream network timeout,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:05.904074+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,0,0,1,1,0,,,,,0,,0.003388,0,1,Injected upstream network timeout,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:05.982207+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,1,1,3,1,1,,,,,1,,0.005997,0,1,,1,canonical_task_specification,1,1,0
+2026-10-27T11:22:12.204253+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,1,1,3,1,1,,,,,1,,6.146426,852,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:22:12.313644+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,2,1,3,1,1,,,,,1,,0.008567,0,1,,1,canonical_task_specification,2,2,0
+2026-10-27T11:22:14.400979+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,2,1,3,1,1,,,,,1,,1.991778,852,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:22:14.510375+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,3,1,3,1,1,,,,,1,,0.009445,0,1,,1,canonical_task_specification,3,3,0
+2026-10-27T11:22:16.846706+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,3,1,3,1,1,,,,,1,,2.244651,852,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:22:16.971726+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_timeout,not_applicable,4,1,3,1,1,,,,,1,,0.008978,0,1,,1,canonical_task_specification,4,4,0
+2026-10-27T11:22:19.044141+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_timeout,schema_diff,4,1,3,1,1,,,,,1,,1.97164,852,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:22:19.153537+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,transient_rate_limit,not_applicable,0,0,1,1,0,,,,,0,,0.005589,0,1,Injected upstream API rate limit,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:19.262907+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,0,0,1,1,0,,,,,0,,0.00369,0,1,Injected upstream API rate limit,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:19.325406+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,0,0,1,1,0,,,,,0,,0.00348,0,1,Injected upstream API rate limit,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:19.403551+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,1,1,3,1,1,,,,,1,,0.005228,0,1,,1,canonical_task_specification,1,1,0
+2026-10-27T11:22:25.852527+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,1,1,3,1,1,,,,,1,,6.381675,860,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:22:25.961924+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,2,1,3,1,1,,,,,1,,0.008172,0,1,,1,canonical_task_specification,2,2,0
+2026-10-27T11:22:28.135333+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,2,1,3,1,1,,,,,1,,2.086004,860,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:22:28.260352+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,3,1,3,1,1,,,,,1,,0.008671,0,1,,1,canonical_task_specification,3,3,0
+2026-10-27T11:22:30.461128+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,3,1,3,1,1,,,,,1,,2.099463,860,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:22:30.570526+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,transient_rate_limit,not_applicable,4,1,3,1,1,,,,,1,,0.007841,0,1,,1,canonical_task_specification,4,4,0
+2026-10-27T11:22:33.297276+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,transient_rate_limit,schema_diff,4,1,3,1,1,,,,,1,,2.628176,860,1,,1,canonical_task_specification,4,4,1
+2026-10-27T11:22:33.437927+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,no_verification,wrong_tool,not_applicable,0,0,1,1,0,,,,,0,,0.008932,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:33.562920+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,0,0,1,1,0,,,,,0,,0.007186,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,0,0,0
+2026-10-27T11:22:33.625422+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,0,0,1,1,0,,,,,0,,0.003797,0,1,"Selected check_stock, but the current task requires reserve_stock",1,canonical_task_specification,0,0,0
+2026-10-27T11:22:33.703546+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,1,0,1,1,0,,,,,1,,0.005721,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,1,1,0
+2026-10-27T11:22:40.642486+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,1,1,3,1,1,,,,,1,,6.87973,881,1,,1,canonical_task_specification,1,1,1
+2026-10-27T11:22:40.783136+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,2,0,1,1,0,,,,,2,,0.011862,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,2,2,0
+2026-10-27T11:22:43.032669+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,2,1,3,1,1,,,,,1,,2.149386,881,1,,1,canonical_task_specification,2,2,1
+2026-10-27T11:22:43.157683+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,3,0,1,1,0,,,,,3,,0.011906,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,3,3,0
+2026-10-27T11:22:45.544286+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,3,1,3,1,1,,,,,1,,2.294002,881,1,,1,canonical_task_specification,3,3,1
+2026-10-27T11:22:45.684931+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,naive_retry,wrong_tool,not_applicable,4,0,1,1,0,,,,,4,,0.015774,0,1,Tool call result does not satisfy the independent task criterion,1,canonical_task_specification,4,4,0
+2026-10-27T11:22:48.005466+00:00,inventory_notebook,synthetic_inventory,llm,qwen2.5:1.5b,1,closed_loop,wrong_tool,schema_diff,4,1,3,1,1,,,,,1,,2.235817,881,1,,1,canonical_task_specification,4,4,1

@@ -1,0 +1,14 @@
+{
+  "experiment": "two_agent_independent_source_choice",
+  "model": "qwen2.5:1.5b",
+  "task_count": 30,
+  "design": "Both agents receive the full MCP tool catalog. Agent A resolves the country and chooses the first evidence source; Agent B must independently select the other source; Agent A submits the merged decision.",
+  "total_planned_trials": 30,
+  "design_version": "phase_d_grounded_merge_feedback_v2",
+  "merge_grounding_note": "Decision prompts and corrective feedback expose only president_name values already returned by the two MCP source calls; benchmark gold labels are not inserted into model prompts.",
+  "plan_signature": "2bff2c9425a0227e950dd47fc9ca39bdf330dfe3f3a650b2d3154a9ef7d2acd6",
+  "completion_status": "complete",
+  "saved_rows": 30,
+  "start_or_check_utc": "2026-10-28T07:18:26.923374+00:00",
+  "finish_utc": "2026-10-28T07:37:04.355028+00:00"
+}

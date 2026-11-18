@@ -1,0 +1,18 @@
+TWO-AGENT MCP PIPELINE EVIDENCE
+
+Question: Who was president of the country whose capital is Paris throughout the interval 2009-01-01 to 2010-12-31? Use only MCP-retrieved references.
+
+GENERATED:
+- Agent A's MCP tool call
+- Agent B's MCP tool call
+- Reference C call constructed from the merged retrieved presidency_reference
+
+RETRIEVED:
+- Reference A country/capital rows from countries.csv
+- Reference B country/presidency rows from president_index.csv
+- Reference C dated term rows from president_terms.csv
+
+AUGMENTED THROUGH MCP:
+MCP-retrieved A and B lists are merged to create grounded identifiers; the merged presidency_reference augments the next MCP call to C; retrieved term dates are then filtered against the requested interval.
+
+FINAL ANSWER: Nicolas Sarkozy

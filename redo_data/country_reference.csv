@@ -1,0 +1,31 @@
+﻿capital,country_code,country_name,country_qid,capital_qid
+Paris,FRA,France,Q142,Q90
+Berlin,DEU,Germany,Q183,Q64
+Rome,ITA,Italy,Q38,Q220
+Lisbon,PRT,Portugal,Q45,Q597
+Dublin,IRL,Ireland,Q27,Q1761
+Vienna,AUT,Austria,Q40,Q1741
+Helsinki,FIN,Finland,Q33,Q1757
+Warsaw,POL,Poland,Q36,Q270
+Prague,CZE,Czech Republic,Q213,Q1085
+Bratislava,SVK,Slovakia,Q214,Q1780
+Budapest,HUN,Hungary,Q28,Q1781
+Zagreb,HRV,Croatia,Q224,Q1435
+Ljubljana,SVN,Slovenia,Q215,Q437
+Tallinn,EST,Estonia,Q191,Q1770
+Riga,LVA,Latvia,Q211,Q1773
+Vilnius,LTU,Lithuania,Q37,Q216
+Athens,GRC,Greece,Q41,Q1524
+Nicosia,CYP,Cyprus,Q229,Q3856
+Bucharest,ROU,Romania,Q218,Q19660
+"Washington, D.C.",USA,United States,Q30,Q61
+Mexico City,MEX,Mexico,Q96,Q1489
+Brasília,BRA,Brazil,Q155,Q2844
+Buenos Aires,ARG,Argentina,Q414,Q1486
+Santiago,CHL,Chile,Q298,Q2887
+Bogotá,COL,Colombia,Q739,Q2841
+Lima,PER,Peru,Q419,Q2868
+Montevideo,URY,Uruguay,Q77,Q1335
+Asunción,PRY,Paraguay,Q733,Q2933
+Quito,ECU,Ecuador,Q736,Q2900
+Panama City,PAN,Panama,Q804,Q3306

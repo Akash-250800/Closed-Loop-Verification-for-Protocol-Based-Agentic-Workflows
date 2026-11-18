@@ -1,0 +1,11 @@
+{
+  "experiment": "two_agent_independent_source_choice",
+  "model": "qwen2.5:1.5b",
+  "task_count": 30,
+  "design": "Both agents receive the full MCP tool catalog. Agent A resolves the country and chooses the first evidence source; Agent B must independently select the other source; Agent A submits the merged decision.",
+  "total_planned_trials": 30,
+  "plan_signature": "80ccd023035bddc15aecb8faadcf4f466aca304c33521704bc22f75ef0fd4421",
+  "completion_status": "in_progress",
+  "saved_rows": 15,
+  "start_or_check_utc": "2026-10-27T14:23:09.854397+00:00"
+}

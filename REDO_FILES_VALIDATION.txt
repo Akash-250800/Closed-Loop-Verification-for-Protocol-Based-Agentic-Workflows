@@ -1,0 +1,45 @@
+MCP THESIS REDO RUNNERS — VALIDATION NOTE
+==========================================
+
+Files:
+- 01_prepare_redo_data.py
+- 02_run_redo_experiments.py
+- 03_final_verify_redo.py
+
+Validation performed before delivery
+------------------------------------
+1. All three files compiled successfully with Python bytecode compilation.
+2. All three files also compiled with Python warnings promoted to errors.
+3. 01_prepare_redo_data.py was run against the exact latest MCP-Thesis folder supplied by the user.
+   Result: PASS, 30/30 countries, three derived reference tables, unique H-DATA match for every case.
+4. 02_run_redo_experiments.py --self-test passed.
+   Planned research-row total: 1268.
+5. The custom 30-country policy engine was exercised with an in-process MCP test stub and a deterministic agent.
+   Verified outcomes:
+   - no-fault: all three policies complete;
+   - type mismatch: no-verification and naive retry fail, closed-loop recovers;
+   - wrong tool: no-verification and naive retry fail, closed-loop recovers;
+   - transient_once: no-verification fails, naive retry succeeds on the identical second call, closed-loop recovers;
+   - persistent_corruption: no-verification and naive retry fail, closed-loop recovers.
+   Also verified: every naive retry replays the same proposal text rather than regenerating it.
+6. The redesigned two-agent action sequence was tested with the same MCP stub.
+   Result: PASS; Agent A selected the first source, Agent B selected the independent source, and the merged decision completed.
+7. 03_final_verify_redo.py --self-test passed.
+8. 03_final_verify_redo.py was run end-to-end against a synthetic 1268-row matrix constructed only for verifier testing.
+   Result: FINAL REDO VERIFICATION: PASS.
+9. The MCP v2 source bundled in the user's latest .venv was inspected to confirm that the code uses the existing
+   mcp.client.Client and mcp.server.mcpserver.MCPServer APIs already used by the current project.
+
+Important limitation
+--------------------
+The full real Ollama experiment cannot be executed in the assistant's Linux environment because the user's MCP/Ollama
+runtime is a Windows-local environment. The scripts therefore perform package, pytest, data-hash, and Ollama preflight
+checks on the user's machine before expensive trials start. Experimental model failures are valid outcomes and are not
+converted into fake successes.
+
+Data provenance rule
+--------------------
+The scripts do not download or invent replacement historical records. Step 1 derives experiment references only from:
+- wikidata_presidential_record.csv
+- hdata_plt_cleaned.csv
+and stores SHA-256 hashes in redo_data/manifest.json.

@@ -1,0 +1,4 @@
+﻿condition,fault,feedback_format,scheduled_retry_budget,n,completion_rate,mean_retries,mean_latency_seconds
+closed_loop,none,schema_diff,,30,0.9,0.2,20.387509966666666
+naive_retry,none,not_applicable,,30,0.9,0.2,18.1879695
+no_verification,none,not_applicable,,30,0.8,0,91.74111366666666

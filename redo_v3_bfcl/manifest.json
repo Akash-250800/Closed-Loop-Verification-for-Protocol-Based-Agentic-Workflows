@@ -1,0 +1,51 @@
+{
+  "start_utc": "2026-10-27T14:17:49.550019+00:00",
+  "mode": "ollama",
+  "model": "qwen2.5:1.5b",
+  "benchmark": "bfcl",
+  "benchmark_question_file": "data\\bfcl_v3_simple\\questions.jsonl",
+  "benchmark_answer_file": "data\\bfcl_v3_simple\\answers.jsonl",
+  "dataset_rejected_entries": [],
+  "task_count": 20,
+  "task_ids": [
+    "simple_0",
+    "simple_1",
+    "simple_2",
+    "simple_3",
+    "simple_4",
+    "simple_5",
+    "simple_6",
+    "simple_7",
+    "simple_8",
+    "simple_9",
+    "simple_10",
+    "simple_11",
+    "simple_12",
+    "simple_13",
+    "simple_14",
+    "simple_15",
+    "simple_16",
+    "simple_17",
+    "simple_18",
+    "simple_19"
+  ],
+  "suite": "baselines",
+  "faults": [
+    "none"
+  ],
+  "feedback_formats": [
+    "raw_trace",
+    "schema_diff",
+    "natural_language"
+  ],
+  "retry_budgets": [
+    2
+  ],
+  "replicates": 1,
+  "trial_plans": 3,
+  "total_planned_trials": 60,
+  "token_cost_note": "Measured from live model API usage only. Not a currency cost.",
+  "injection_note": "Controlled faults are synthetic; incidence in natural traffic is separately logged as pre-injection generation errors.",
+  "completion_status": "complete",
+  "finish_utc": "2026-10-27T14:17:49.581267+00:00"
+}

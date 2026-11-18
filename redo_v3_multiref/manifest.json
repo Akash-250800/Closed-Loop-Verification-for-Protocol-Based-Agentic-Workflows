@@ -1,0 +1,29 @@
+{
+  "experiment": "30_country_two_source_policy_comparison",
+  "model": "qwen2.5:1.5b",
+  "task_count": 30,
+  "faults": [
+    "none",
+    "type_mismatch",
+    "wrong_tool",
+    "transient_once",
+    "persistent_corruption"
+  ],
+  "policies": [
+    "no_verification",
+    "naive_retry",
+    "closed_loop"
+  ],
+  "retry_budget": 2,
+  "total_planned_trials": 450,
+  "source_design": "Wikidata-derived reference + independent H-DATA, with agent-selected evidence order",
+  "controlled_fault_note": "Injected-fault rows start from a canonical balanced two-source control chain; no-fault rows remain natural end-to-end runs.",
+  "naive_retry_definition": "Replay the exact same failed tool call without corrective feedback",
+  "transient_definition": "One-shot controlled transport failure; retry is allowed to execute normally",
+  "persistent_definition": "Schema-valid country_code corruption to ZZZ; naive retry repeats it unchanged",
+  "plan_signature": "8cd2a696749758fbc6cfad1b83adf397663e44a35bd2a45dc90678fffaf07792",
+  "completion_status": "complete",
+  "saved_rows": 450,
+  "start_or_check_utc": "2026-10-27T14:17:50.690639+00:00",
+  "finish_utc": "2026-10-27T14:23:09.823144+00:00"
+}

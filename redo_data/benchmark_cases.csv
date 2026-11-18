@@ -1,0 +1,31 @@
+﻿task_id,country_code,country_name,capital,target_date,gold_president_name,wikidata_president_name,hdata_president_name,agreement_type
+redo_fra,FRA,France,Paris,2001-05-16,Jacques Chirac,Jacques Chirac,Jacques Chirac,EXACT_TWO_SOURCE
+redo_deu,DEU,Germany,Berlin,2001-12-30,Johannes Rau,Johannes Rau,Johannes Rau,EXACT_TWO_SOURCE
+redo_ita,ITA,Italy,Rome,2002-11-15,Carlo Azeglio Ciampi,Carlo Azeglio Ciampi,Carlo Azeglio Ciampi,EXACT_TWO_SOURCE
+redo_prt,PRT,Portugal,Lisbon,2011-03-09,Aníbal Cavaco Silva,Aníbal Cavaco Silva,Anibal Antonio Cavaco Silva,EXACT_TWO_SOURCE
+redo_irl,IRL,Ireland,Dublin,2017-06-06,Michael D. Higgins,Michael D. Higgins,Michael Daniel Higgins,SOURCE2_RIGHT_CENSORED_AT_2022
+redo_aut,AUT,Austria,Vienna,2010-07-08,Heinz Fischer,Heinz Fischer,Heinz Fischer,EXACT_TWO_SOURCE
+redo_fin,FIN,Finland,Helsinki,2006-03-01,Tarja Halonen,Tarja Halonen,Tarja Kaarina Halonen,EXACT_TWO_SOURCE
+redo_pol,POL,Poland,Warsaw,2000-12-22,Aleksander Kwaśniewski,Aleksander Kwaśniewski,Aleksander Kwasniewski,EXACT_TWO_SOURCE
+redo_cze,CZE,Czech Republic,Prague,2008-03-06,Václav Klaus,Václav Klaus,Vaclav Klaus,ONE_DAY_END_BOUNDARY_RESOLVED
+redo_svk,SVK,Slovakia,Bratislava,2009-06-15,Ivan Gašparovič,Ivan Gašparovič,Ivan Gasparovic,EXACT_TWO_SOURCE
+redo_hun,HUN,Hungary,Budapest,2017-05-09,János Áder,János Áder,Janos Ader,ONE_DAY_END_BOUNDARY_RESOLVED
+redo_hrv,HRV,Croatia,Zagreb,2005-02-17,Stjepan Mesić,Stjepan Mesić,Stjepan Mesic,EXACT_TWO_SOURCE
+redo_svn,SVN,Slovenia,Ljubljana,2005-06-22,Janez Drnovšek,Janez Drnovšek,Janez Drnovsek,EXACT_TWO_SOURCE
+redo_est,EST,Estonia,Tallinn,2011-10-10,Toomas Hendrik Ilves,Toomas Hendrik Ilves,Toomas Hendrik Ilves,EXACT_TWO_SOURCE
+redo_lva,LVA,Latvia,Riga,2003-07-08,Vaira Vīķe-Freiberga,Vaira Vīķe-Freiberga,Vaira Vike-Freiberga,EXACT_TWO_SOURCE
+redo_ltu,LTU,Lithuania,Vilnius,2000-08-27,Valdas Adamkus,Valdas Adamkus,Valdas Adamkus,EXACT_TWO_SOURCE
+redo_grc,GRC,Greece,Athens,2017-09-11,Prokopis Pavlopoulos,Prokopis Pavlopoulos,Prokopis Pavlopoulos,EXACT_TWO_SOURCE
+redo_cyp,CYP,Cyprus,Nicosia,2010-08-29,Dimitris Christofias,Dimitris Christofias,Dimitris Christofi Christofias,EXACT_TWO_SOURCE
+redo_rou,ROU,Romania,Bucharest,2002-12-20,Ion Iliescu,Ion Iliescu,Ion Iliescu,EXACT_TWO_SOURCE
+redo_usa,USA,United States,"Washington, D.C.",2005-01-20,George W. Bush,George W. Bush,George Walker Bush,EXACT_TWO_SOURCE
+redo_mex,MEX,Mexico,Mexico City,2015-12-01,Enrique Peña Nieto,Enrique Peña Nieto,Enrique Pena Nieto,EXACT_TWO_SOURCE
+redo_bra,BRA,Brazil,Brasília,2020-12-31,Jair Bolsonaro,Jair Bolsonaro,Jair Bolsonaro,SOURCE2_RIGHT_CENSORED_AT_2022
+redo_arg,ARG,Argentina,Buenos Aires,2005-09-01,Néstor Kirchner,Néstor Kirchner,Nestor Kirchner,EXACT_TWO_SOURCE
+redo_chl,CHL,Chile,Santiago,2003-03-11,Ricardo Lagos,Ricardo Lagos,Ricardo Lagos,EXACT_TWO_SOURCE
+redo_col,COL,Colombia,Bogotá,2020-08-06,Iván Duque,Iván Duque,Iván Duque,EXACT_TWO_SOURCE
+redo_per,PER,Peru,Lima,2014-01-26,Ollanta Humala,Ollanta Humala,Ollanta Humala Tasso,EXACT_TWO_SOURCE
+redo_ury,URY,Uruguay,Montevideo,2017-08-30,Tabaré Vázquez,Tabaré Vázquez,Tabare Vazquez,EXACT_TWO_SOURCE
+redo_pry,PRY,Paraguay,Asunción,2016-02-14,Horacio Cartes,Horacio Cartes,Horacio Manuel Cartes,EXACT_TWO_SOURCE
+redo_ecu,ECU,Ecuador,Quito,2012-03-20,Rafael Correa,Rafael Correa,Rafael Correa,EXACT_TWO_SOURCE
+redo_pan,PAN,Panama,Panama City,2016-12-30,Juan Carlos Varela,Juan Carlos Varela,Juan Carlos Varela,EXACT_TWO_SOURCE

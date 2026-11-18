@@ -1,0 +1,7 @@
+NAIVE RETRY MECHANISM — TECHNICAL DEFINITION
+===========================================
+Naive retry does not regenerate or repair a failed proposal. It replays the exact same proposal.
+transient_once is injected only on attempt 1, so attempt 2 may execute the same valid call successfully.
+persistent_corruption changes country_code to ZZZ; naive retry repeats ZZZ unchanged, so the defect persists.
+Closed-loop GVEF receives error feedback and asks the model to generate a corrected proposal.
+This file documents mechanism, not an LLM performance result.

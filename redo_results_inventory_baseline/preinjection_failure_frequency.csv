@@ -1,0 +1,2 @@
+failure_category,count,all_model_proposals,observed_rate_per_proposal
+malformed_payload,45,48,0.9375

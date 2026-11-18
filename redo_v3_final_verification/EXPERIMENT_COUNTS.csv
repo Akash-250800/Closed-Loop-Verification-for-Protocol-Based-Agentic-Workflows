@@ -1,0 +1,8 @@
+﻿experiment,expected_rows,actual_rows,status
+redo_v3_inventory_baseline,480,480,PASS
+redo_v3_feedback,72,72,PASS
+redo_v3_retry,176,176,PASS
+redo_v3_bfcl,60,60,PASS
+redo_v3_multiref,450,450,PASS
+redo_v3_two_agent,30,30,PASS
+GRAND_TOTAL,1268,1268,PASS

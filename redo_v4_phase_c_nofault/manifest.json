@@ -1,0 +1,22 @@
+{
+  "experiment": "phase_c_nofault_targeted_grounded_merge_repair",
+  "design_version": "phase_d_grounded_merge_feedback_v2",
+  "model": "qwen2.5:1.5b",
+  "task_count": 30,
+  "policies": [
+    "no_verification",
+    "naive_retry",
+    "closed_loop"
+  ],
+  "fault": "none",
+  "total_planned_trials": 90,
+  "runner_sha256": "a5ce6d5f43a761a4404667ed9bab3924d2763aa0d71ff60d6be02d3f1a7be137",
+  "benchmark_sha256": "61028ef98a3d9e41acabdd9f24f8931965be4990c7036abbef42cf7752ca4af4",
+  "original_phase_c_sha256": "b4a6f92f9d2b8dc872ac374eeb5178a0741fe35db9b820e7e5c8979eb83097a6",
+  "method_note": "Fresh complete 30-country x 3-policy natural no-fault comparison under the corrected Phase D evidence-copy prompt and grounded feedback. No task answer is inserted into the model decision; observed MCP outputs are used. Original controlled fault-injection trials are preserved unchanged.",
+  "plan_signature": "c7fe3cbc8a6448f7c9879713a5ddf105b29e89bff95dec06eba664af703e3abe",
+  "completion_status": "complete",
+  "saved_rows": 90,
+  "start_or_check_utc": "2026-10-28T08:30:31.758674+00:00",
+  "finish_utc": "2026-10-28T09:26:33.115387+00:00"
+}

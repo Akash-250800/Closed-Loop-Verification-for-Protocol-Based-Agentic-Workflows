@@ -1,0 +1,41 @@
+FINAL REDO RUNNER FIX
+
+Root cause of the previous ExceptionGroup
+-----------------------------------------
+The previous seed-builder tried to obtain a perfect three-step LLM seed chain before
+the real experiment. A schema-valid but semantically wrong reserve_stock proposal could
+execute and mutate inventory state before the seed oracle rejected it. Later retries
+then ran against already-changed state. When the builder exhausted its attempts, the
+RuntimeError was raised inside the MCP async context and surfaced as an ExceptionGroup.
+
+Final design
+------------
+1. No-fault research cells remain genuine end-to-end Qwen/Ollama runs.
+2. Injected-fault research cells use canonical valid calls derived directly from the
+   benchmark task specification as the common pre-fault starting point.
+3. Canonical control calls are setup controls only; they are not counted as LLM outputs.
+4. Naive retry replays the identical corrupted proposal.
+5. Closed-loop GVEF receives structured feedback and asks Qwen to regenerate.
+6. 30-country multi-reference controlled calls use balanced source order:
+   15 Wikidata->H-DATA and 15 H-DATA->Wikidata.
+7. Natural 30-country no-fault trials and all two-agent trials remain LLM-driven so
+   agent source/tool choice is still measured.
+8. All research output folders are new redo_v3_* folders. V1/V2 folders are untouched.
+9. A deterministic pre-run mechanism gate runs before the expensive research matrix:
+      transient_api + naive_retry must recover
+      type_mismatch + naive_retry must fail
+   If this gate fails, the script aborts before the 1,268-row run.
+10. ExceptionGroup errors are now expanded to show their real sub-exceptions.
+
+Checks performed before delivery
+--------------------------------
+- Python syntax compilation: PASS
+- Runner self-test: PASS
+- Final verifier self-test: PASS
+- Canonical inventory control chains: 20/20 tasks x 3 steps PASS
+- Canonical multi-reference chains: 30/30 countries x 4 steps PASS
+- Multi-reference source order balance: 15 Wikidata-first / 15 H-DATA-first PASS
+
+The actual MCP/Ollama mechanism gate and research outcomes must execute in the user's
+Windows .venv_redo environment because this environment cannot run the user's installed
+Windows MCP package or local Ollama instance.

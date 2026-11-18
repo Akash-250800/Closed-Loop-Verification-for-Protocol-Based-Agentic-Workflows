@@ -1,0 +1,397 @@
+{
+  "model": "qwen2.5:1.5b",
+  "purpose": "Canonical valid four-step two-source chains used only as common initial calls for injected-fault comparisons. Natural no-fault and two-agent runs remain LLM-driven.",
+  "created_utc": "2026-10-27T14:17:50.581264+00:00",
+  "tasks": {
+    "redo_fra": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Paris\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"FRA\", \"target_date\": \"2001-05-16\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"FRA\", \"target_date\": \"2001-05-16\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"FRA\", \"hdata_president\": \"Jacques Chirac\", \"president_name\": \"Jacques Chirac\", \"target_date\": \"2001-05-16\", \"wikidata_president\": \"Jacques Chirac\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_deu": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Berlin\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"DEU\", \"target_date\": \"2001-12-30\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"DEU\", \"target_date\": \"2001-12-30\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"DEU\", \"hdata_president\": \"Johannes Rau\", \"president_name\": \"Johannes Rau\", \"target_date\": \"2001-12-30\", \"wikidata_president\": \"Johannes Rau\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_ita": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Rome\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"ITA\", \"target_date\": \"2002-11-15\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"ITA\", \"target_date\": \"2002-11-15\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"ITA\", \"hdata_president\": \"Carlo Azeglio Ciampi\", \"president_name\": \"Carlo Azeglio Ciampi\", \"target_date\": \"2002-11-15\", \"wikidata_president\": \"Carlo Azeglio Ciampi\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_prt": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Lisbon\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"PRT\", \"target_date\": \"2011-03-09\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"PRT\", \"target_date\": \"2011-03-09\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"PRT\", \"hdata_president\": \"Anibal Antonio Cavaco Silva\", \"president_name\": \"Aníbal Cavaco Silva\", \"target_date\": \"2011-03-09\", \"wikidata_president\": \"Aníbal Cavaco Silva\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_irl": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Dublin\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"IRL\", \"target_date\": \"2017-06-06\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"IRL\", \"target_date\": \"2017-06-06\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"IRL\", \"hdata_president\": \"Michael Daniel Higgins\", \"president_name\": \"Michael D. Higgins\", \"target_date\": \"2017-06-06\", \"wikidata_president\": \"Michael D. Higgins\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_aut": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Vienna\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"AUT\", \"target_date\": \"2010-07-08\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"AUT\", \"target_date\": \"2010-07-08\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"AUT\", \"hdata_president\": \"Heinz Fischer\", \"president_name\": \"Heinz Fischer\", \"target_date\": \"2010-07-08\", \"wikidata_president\": \"Heinz Fischer\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_fin": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Helsinki\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"FIN\", \"target_date\": \"2006-03-01\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"FIN\", \"target_date\": \"2006-03-01\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"FIN\", \"hdata_president\": \"Tarja Kaarina Halonen\", \"president_name\": \"Tarja Halonen\", \"target_date\": \"2006-03-01\", \"wikidata_president\": \"Tarja Halonen\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_pol": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Warsaw\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"POL\", \"target_date\": \"2000-12-22\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"POL\", \"target_date\": \"2000-12-22\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"POL\", \"hdata_president\": \"Aleksander Kwasniewski\", \"president_name\": \"Aleksander Kwaśniewski\", \"target_date\": \"2000-12-22\", \"wikidata_president\": \"Aleksander Kwaśniewski\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_cze": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Prague\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"CZE\", \"target_date\": \"2008-03-06\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"CZE\", \"target_date\": \"2008-03-06\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"CZE\", \"hdata_president\": \"Vaclav Klaus\", \"president_name\": \"Václav Klaus\", \"target_date\": \"2008-03-06\", \"wikidata_president\": \"Václav Klaus\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_svk": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Bratislava\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"SVK\", \"target_date\": \"2009-06-15\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"SVK\", \"target_date\": \"2009-06-15\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"SVK\", \"hdata_president\": \"Ivan Gasparovic\", \"president_name\": \"Ivan Gašparovič\", \"target_date\": \"2009-06-15\", \"wikidata_president\": \"Ivan Gašparovič\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_hun": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Budapest\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"HUN\", \"target_date\": \"2017-05-09\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"HUN\", \"target_date\": \"2017-05-09\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"HUN\", \"hdata_president\": \"Janos Ader\", \"president_name\": \"János Áder\", \"target_date\": \"2017-05-09\", \"wikidata_president\": \"János Áder\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_hrv": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Zagreb\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"HRV\", \"target_date\": \"2005-02-17\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"HRV\", \"target_date\": \"2005-02-17\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"HRV\", \"hdata_president\": \"Stjepan Mesic\", \"president_name\": \"Stjepan Mesić\", \"target_date\": \"2005-02-17\", \"wikidata_president\": \"Stjepan Mesić\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_svn": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Ljubljana\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"SVN\", \"target_date\": \"2005-06-22\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"SVN\", \"target_date\": \"2005-06-22\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"SVN\", \"hdata_president\": \"Janez Drnovsek\", \"president_name\": \"Janez Drnovšek\", \"target_date\": \"2005-06-22\", \"wikidata_president\": \"Janez Drnovšek\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_est": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Tallinn\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"EST\", \"target_date\": \"2011-10-10\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"EST\", \"target_date\": \"2011-10-10\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"EST\", \"hdata_president\": \"Toomas Hendrik Ilves\", \"president_name\": \"Toomas Hendrik Ilves\", \"target_date\": \"2011-10-10\", \"wikidata_president\": \"Toomas Hendrik Ilves\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_lva": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Riga\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"LVA\", \"target_date\": \"2003-07-08\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"LVA\", \"target_date\": \"2003-07-08\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"LVA\", \"hdata_president\": \"Vaira Vike-Freiberga\", \"president_name\": \"Vaira Vīķe-Freiberga\", \"target_date\": \"2003-07-08\", \"wikidata_president\": \"Vaira Vīķe-Freiberga\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_ltu": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Vilnius\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"LTU\", \"target_date\": \"2000-08-27\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"LTU\", \"target_date\": \"2000-08-27\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"LTU\", \"hdata_president\": \"Valdas Adamkus\", \"president_name\": \"Valdas Adamkus\", \"target_date\": \"2000-08-27\", \"wikidata_president\": \"Valdas Adamkus\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_grc": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Athens\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"GRC\", \"target_date\": \"2017-09-11\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"GRC\", \"target_date\": \"2017-09-11\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"GRC\", \"hdata_president\": \"Prokopis Pavlopoulos\", \"president_name\": \"Prokopis Pavlopoulos\", \"target_date\": \"2017-09-11\", \"wikidata_president\": \"Prokopis Pavlopoulos\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_cyp": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Nicosia\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"CYP\", \"target_date\": \"2010-08-29\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"CYP\", \"target_date\": \"2010-08-29\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"CYP\", \"hdata_president\": \"Dimitris Christofi Christofias\", \"president_name\": \"Dimitris Christofias\", \"target_date\": \"2010-08-29\", \"wikidata_president\": \"Dimitris Christofias\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_rou": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Bucharest\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"ROU\", \"target_date\": \"2002-12-20\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"ROU\", \"target_date\": \"2002-12-20\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"ROU\", \"hdata_president\": \"Ion Iliescu\", \"president_name\": \"Ion Iliescu\", \"target_date\": \"2002-12-20\", \"wikidata_president\": \"Ion Iliescu\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_usa": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Washington, D.C.\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"USA\", \"target_date\": \"2005-01-20\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"USA\", \"target_date\": \"2005-01-20\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"USA\", \"hdata_president\": \"George Walker Bush\", \"president_name\": \"George W. Bush\", \"target_date\": \"2005-01-20\", \"wikidata_president\": \"George W. Bush\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_mex": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Mexico City\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"MEX\", \"target_date\": \"2015-12-01\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"MEX\", \"target_date\": \"2015-12-01\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"MEX\", \"hdata_president\": \"Enrique Pena Nieto\", \"president_name\": \"Enrique Peña Nieto\", \"target_date\": \"2015-12-01\", \"wikidata_president\": \"Enrique Peña Nieto\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_bra": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Brasília\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"BRA\", \"target_date\": \"2020-12-31\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"BRA\", \"target_date\": \"2020-12-31\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"BRA\", \"hdata_president\": \"Jair Bolsonaro\", \"president_name\": \"Jair Bolsonaro\", \"target_date\": \"2020-12-31\", \"wikidata_president\": \"Jair Bolsonaro\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_arg": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Buenos Aires\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"ARG\", \"target_date\": \"2005-09-01\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"ARG\", \"target_date\": \"2005-09-01\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"ARG\", \"hdata_president\": \"Nestor Kirchner\", \"president_name\": \"Néstor Kirchner\", \"target_date\": \"2005-09-01\", \"wikidata_president\": \"Néstor Kirchner\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_chl": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Santiago\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"CHL\", \"target_date\": \"2003-03-11\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"CHL\", \"target_date\": \"2003-03-11\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"CHL\", \"hdata_president\": \"Ricardo Lagos\", \"president_name\": \"Ricardo Lagos\", \"target_date\": \"2003-03-11\", \"wikidata_president\": \"Ricardo Lagos\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_col": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Bogotá\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"COL\", \"target_date\": \"2020-08-06\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"COL\", \"target_date\": \"2020-08-06\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"COL\", \"hdata_president\": \"Iván Duque\", \"president_name\": \"Iván Duque\", \"target_date\": \"2020-08-06\", \"wikidata_president\": \"Iván Duque\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_per": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Lima\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"PER\", \"target_date\": \"2014-01-26\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"PER\", \"target_date\": \"2014-01-26\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"PER\", \"hdata_president\": \"Ollanta Humala Tasso\", \"president_name\": \"Ollanta Humala\", \"target_date\": \"2014-01-26\", \"wikidata_president\": \"Ollanta Humala\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_ury": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Montevideo\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"URY\", \"target_date\": \"2017-08-30\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"URY\", \"target_date\": \"2017-08-30\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"URY\", \"hdata_president\": \"Tabare Vazquez\", \"president_name\": \"Tabaré Vázquez\", \"target_date\": \"2017-08-30\", \"wikidata_president\": \"Tabaré Vázquez\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_pry": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Asunción\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"PRY\", \"target_date\": \"2016-02-14\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"PRY\", \"target_date\": \"2016-02-14\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"PRY\", \"hdata_president\": \"Horacio Manuel Cartes\", \"president_name\": \"Horacio Cartes\", \"target_date\": \"2016-02-14\", \"wikidata_president\": \"Horacio Cartes\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_ecu": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Quito\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"ECU\", \"target_date\": \"2012-03-20\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"ECU\", \"target_date\": \"2012-03-20\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"ECU\", \"hdata_president\": \"Rafael Correa\", \"president_name\": \"Rafael Correa\", \"target_date\": \"2012-03-20\", \"wikidata_president\": \"Rafael Correa\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "wikidata",
+        "hdata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    },
+    "redo_pan": {
+      "proposals": [
+        "{\"args\": {\"capital\": \"Panama City\"}, \"tool\": \"resolve_country_by_capital\"}",
+        "{\"args\": {\"country_code\": \"PAN\", \"target_date\": \"2016-12-30\"}, \"tool\": \"lookup_hdata_president\"}",
+        "{\"args\": {\"country_code\": \"PAN\", \"target_date\": \"2016-12-30\"}, \"tool\": \"lookup_wikidata_president\"}",
+        "{\"args\": {\"country_code\": \"PAN\", \"hdata_president\": \"Juan Carlos Varela\", \"president_name\": \"Juan Carlos Varela\", \"target_date\": \"2016-12-30\", \"wikidata_president\": \"Juan Carlos Varela\"}, \"tool\": \"submit_presidential_decision\"}"
+      ],
+      "source_order": [
+        "hdata",
+        "wikidata"
+      ],
+      "seed_type": "canonical_balanced_two_source"
+    }
+  }
+}

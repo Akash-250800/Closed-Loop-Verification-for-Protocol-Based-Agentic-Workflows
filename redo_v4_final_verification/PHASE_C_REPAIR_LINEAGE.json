@@ -1,0 +1,24 @@
+{
+  "original_rows": 450,
+  "corrected_rows": 450,
+  "unchanged_controlled_rows": 360,
+  "replaced_natural_rows": 90,
+  "overall": {
+    "closed_loop": 145,
+    "naive_retry": 57,
+    "no_verification": 24
+  },
+  "nofault": {
+    "closed_loop": 27,
+    "naive_retry": 27,
+    "no_verification": 24
+  },
+  "sha256": {
+    "original_phase_c_records": "b4a6f92f9d2b8dc872ac374eeb5178a0741fe35db9b820e7e5c8979eb83097a6",
+    "replacement_nofault_records": "4bea6077603c4ef19717e31b865a4d5ec9790fd98170919e258d3957cb4ee5c3",
+    "corrected_runner": "a5ce6d5f43a761a4404667ed9bab3924d2763aa0d71ff60d6be02d3f1a7be137",
+    "prepared_benchmark": "61028ef98a3d9e41acabdd9f24f8931965be4990c7036abbef42cf7752ca4af4",
+    "corrected_combined_records": "70acd8b8085fa835fe2e66af647b38e6b4e11555455d5bba920a34f43d5e6682"
+  },
+  "outcome_note": "PASS certifies data lineage and consistency, not success of every trial"
+}

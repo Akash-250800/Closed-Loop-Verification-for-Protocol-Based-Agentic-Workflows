@@ -1,0 +1,16 @@
+{
+  "02_run_redo_experiments_FINAL.py": "a5ce6d5f43a761a4404667ed9bab3924d2763aa0d71ff60d6be02d3f1a7be137",
+  "agents.py": "6b3887bb263598bb0bb514def60f31891ec117b912340c46391ec1154bb3db7e",
+  "experiment.py": "65f25bd72f85b9900a938ed9ba5ec48ac3334594055647e0a238b7b61d86c92b",
+  "feedback.py": "086637305b32585d9eb0db8165a74215547037953e6b4128b3ea474b5123e9bb",
+  "redo_v3_bfcl\\trials.csv": "e809bd941ed9d3115a08de7575a3e23a6afae71d2ea270ad146ce5b70a20e37f",
+  "redo_v3_feedback\\trials.csv": "c2b00b63bb7f1b14f25e28062242593d301cef8df6e56b6d150b3c53efd41120",
+  "redo_v3_inventory_baseline\\trials.csv": "c89edb91977bee38a7ed21b7634ac2a58f5098d63604eaf7bc8b7d552d77812a",
+  "redo_v3_retry\\trials.csv": "b6c3b156e5f873e0d77fc11d8bb1d7ca481ea9635e28a65b39a852759b760bd5",
+  "redo_v3_two_agent\\records.json": "1e3408d7f0a3a73169f159279347eb42d198403f7490cce4e3351ff8f2f9a43c",
+  "redo_v3_two_agent\\trials.csv": "d5a34e2225849c8aec1725fa9ca35e79ac04048c7f0bf7ad14ee59069a64e6c8",
+  "redo_v4_final_verification\\FINAL_REDO_CHECK.txt": "a0c39d393b7715b48be34abbe687cc5292fb053f458bb95297981e67233a762c",
+  "redo_v4_multiref_corrected\\trials.csv": "f9ac81ad30ca069c0578de129c725aba54d750b50ed86503a95a1a541c88bf36",
+  "server.py": "723c15a4f7fd75b9eb4e93ac2fdeaaa357cc92087a8633dfc6652aa9a4e298fa",
+  "verification.py": "90afb0576935feff7260b47c5e4772bc2b4be9a2e0877fa5c7be3b4a8d1faaff"
+}

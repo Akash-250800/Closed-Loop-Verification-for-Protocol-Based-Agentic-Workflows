@@ -1,0 +1,209 @@
+{
+  "question": "Who was president of the country whose capital is Paris throughout the interval 2009-01-01 to 2010-12-31? Use only MCP-retrieved references.",
+  "pipeline_semantics": {
+    "generated": [
+      "Agent A's MCP tool call",
+      "Agent B's MCP tool call",
+      "Reference C call constructed from the merged retrieved presidency_reference"
+    ],
+    "retrieved": [
+      "Reference A country/capital rows from countries.csv",
+      "Reference B country/presidency rows from president_index.csv",
+      "Reference C dated term rows from president_terms.csv"
+    ],
+    "augmented_through_mcp": "MCP-retrieved A and B lists are merged to create grounded identifiers; the merged presidency_reference augments the next MCP call to C; retrieved term dates are then filtered against the requested interval."
+  },
+  "service_created_agents": [
+    "Agent A",
+    "Agent B"
+  ],
+  "agent_a": {
+    "label": "Agent A",
+    "generated_call": {
+      "tool": "list_country_reference",
+      "args": {
+        "country": "Paris"
+      }
+    },
+    "retrieved": {
+      "reference": "countries.csv",
+      "rows": [
+        {
+          "capital": "Washington D.C.",
+          "country_code": "USA",
+          "country_name": "United States"
+        },
+        {
+          "capital": "Paris",
+          "country_code": "FRA",
+          "country_name": "France"
+        },
+        {
+          "capital": "Mexico City",
+          "country_code": "MEX",
+          "country_name": "Mexico"
+        },
+        {
+          "capital": "Brasilia",
+          "country_code": "BRA",
+          "country_name": "Brazil"
+        }
+      ]
+    },
+    "tokens": 468
+  },
+  "agent_b": {
+    "label": "Agent B",
+    "generated_call": {
+      "tool": "list_president_index_reference",
+      "args": {}
+    },
+    "retrieved": {
+      "reference": "president_index.csv",
+      "rows": [
+        {
+          "country_code": "USA",
+          "presidency_reference": "USA_PRESIDENTS",
+          "president_id": "US_GWB"
+        },
+        {
+          "country_code": "USA",
+          "presidency_reference": "USA_PRESIDENTS",
+          "president_id": "US_BO"
+        },
+        {
+          "country_code": "USA",
+          "presidency_reference": "USA_PRESIDENTS",
+          "president_id": "US_DT1"
+        },
+        {
+          "country_code": "FRA",
+          "presidency_reference": "FRA_PRESIDENTS",
+          "president_id": "FR_JC"
+        },
+        {
+          "country_code": "FRA",
+          "presidency_reference": "FRA_PRESIDENTS",
+          "president_id": "FR_NS"
+        },
+        {
+          "country_code": "FRA",
+          "presidency_reference": "FRA_PRESIDENTS",
+          "president_id": "FR_FH"
+        },
+        {
+          "country_code": "MEX",
+          "presidency_reference": "MEX_PRESIDENTS",
+          "president_id": "MX_VF"
+        },
+        {
+          "country_code": "MEX",
+          "presidency_reference": "MEX_PRESIDENTS",
+          "president_id": "MX_FC"
+        },
+        {
+          "country_code": "MEX",
+          "presidency_reference": "MEX_PRESIDENTS",
+          "president_id": "MX_EPN"
+        },
+        {
+          "country_code": "BRA",
+          "presidency_reference": "BRA_PRESIDENTS",
+          "president_id": "BR_LULA1"
+        },
+        {
+          "country_code": "BRA",
+          "presidency_reference": "BRA_PRESIDENTS",
+          "president_id": "BR_DR"
+        },
+        {
+          "country_code": "BRA",
+          "presidency_reference": "BRA_PRESIDENTS",
+          "president_id": "BR_MT"
+        }
+      ]
+    },
+    "tokens": 608
+  },
+  "merged_agent_lists": {
+    "capital": "Paris",
+    "country_code": "FRA",
+    "country_name": "France",
+    "presidency_reference": "FRA_PRESIDENTS",
+    "candidate_president_ids": [
+      "FR_JC",
+      "FR_NS",
+      "FR_FH"
+    ],
+    "sources_merged": [
+      "countries.csv",
+      "president_index.csv"
+    ]
+  },
+  "reference_c_call": {
+    "tool": "list_presidential_terms",
+    "args": {
+      "presidency_reference": "FRA_PRESIDENTS"
+    }
+  },
+  "reference_c_retrieved": {
+    "reference": "president_terms.csv",
+    "presidency_reference": "FRA_PRESIDENTS",
+    "rows": [
+      {
+        "presidency_reference": "FRA_PRESIDENTS",
+        "president_id": "FR_JC",
+        "president_name": "Jacques Chirac",
+        "start_date": "1995-05-17",
+        "end_date": "2007-05-16"
+      },
+      {
+        "presidency_reference": "FRA_PRESIDENTS",
+        "president_id": "FR_NS",
+        "president_name": "Nicolas Sarkozy",
+        "start_date": "2007-05-16",
+        "end_date": "2012-05-15"
+      },
+      {
+        "presidency_reference": "FRA_PRESIDENTS",
+        "president_id": "FR_FH",
+        "president_name": "Francois Hollande",
+        "start_date": "2012-05-15",
+        "end_date": "2017-05-14"
+      }
+    ]
+  },
+  "merged_evidence": {
+    "capital": "Paris",
+    "country_code": "FRA",
+    "country_name": "France",
+    "presidency_reference": "FRA_PRESIDENTS",
+    "candidate_president_ids": [
+      "FR_JC",
+      "FR_NS",
+      "FR_FH"
+    ],
+    "sources_merged": [
+      "countries.csv",
+      "president_index.csv"
+    ],
+    "requested_interval": {
+      "start": "2009-01-01",
+      "end": "2010-12-31"
+    },
+    "sources": [
+      "countries.csv",
+      "president_index.csv",
+      "president_terms.csv"
+    ]
+  },
+  "final_answer": {
+    "president_id": "FR_NS",
+    "president_name": "Nicolas Sarkozy",
+    "requested_start": "2009-01-01",
+    "requested_end": "2010-12-31",
+    "term_start": "2007-05-16",
+    "term_end": "2012-05-15",
+    "selection_rule": "requested interval lies wholly inside retrieved term"
+  }
+}

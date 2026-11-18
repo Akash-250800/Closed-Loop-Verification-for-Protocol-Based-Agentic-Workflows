@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-10-28T09:26:33.458968+00:00",
+  "original_phase_c": 450,
+  "unchanged_controlled_fault_trials": 360,
+  "new_complete_nofault_trials": 90,
+  "combined_phase_c": 450,
+  "other_verified_v3_experiments": 818,
+  "research_rows_for_dissertation": 1268,
+  "replacement_policies": [
+    "no_verification",
+    "naive_retry",
+    "closed_loop"
+  ],
+  "results_by_policy": {
+    "no_verification": {
+      "successful": 24,
+      "total": 150,
+      "natural_nofault_successful": 24,
+      "natural_nofault_total": 30
+    },
+    "naive_retry": {
+      "successful": 57,
+      "total": 150,
+      "natural_nofault_successful": 27,
+      "natural_nofault_total": 30
+    },
+    "closed_loop": {
+      "successful": 145,
+      "total": 150,
+      "natural_nofault_successful": 27,
+      "natural_nofault_total": 30
+    }
+  },
+  "input_sha256": {
+    "original_phase_c_records": "b4a6f92f9d2b8dc872ac374eeb5178a0741fe35db9b820e7e5c8979eb83097a6",
+    "replacement_nofault_records": "4bea6077603c4ef19717e31b865a4d5ec9790fd98170919e258d3957cb4ee5c3",
+    "corrected_runner": "a5ce6d5f43a761a4404667ed9bab3924d2763aa0d71ff60d6be02d3f1a7be137",
+    "prepared_benchmark": "61028ef98a3d9e41acabdd9f24f8931965be4990c7036abbef42cf7752ca4af4"
+  },
+  "combined_sha256": "70acd8b8085fa835fe2e66af647b38e6b4e11555455d5bba920a34f43d5e6682",
+  "original_evidence_modified": false,
+  "note": "PASS checks row coverage and provenance, not that every LLM call succeeds."
+}

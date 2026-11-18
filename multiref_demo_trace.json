@@ -1,0 +1,115 @@
+{
+  "timestamp_utc": "2026-10-30T10:44:29.615156+00:00",
+  "task_id": "multiref_washington_2012",
+  "source": "multiref_presidents",
+  "mode": "llm",
+  "model": "qwen2.5:1.5b",
+  "replicate": 1,
+  "condition": "closed_loop",
+  "fault": "none",
+  "feedback_format": "schema_diff",
+  "retry_budget": 2,
+  "task_completed": 1,
+  "completed_steps": 3,
+  "injected_fault": 0,
+  "injected_fault_recovered": 0,
+  "model_proposals": 4,
+  "spontaneous_preinjection_errors": 1,
+  "spontaneous_categories": [
+    "semantic_failure"
+  ],
+  "tool_attempts": 4,
+  "retry_count": 1,
+  "circuit_breaker_open": 0,
+  "latency_seconds": 11.700742,
+  "total_tokens": 3940,
+  "token_measurement_complete": 1,
+  "last_error": "",
+  "events": [
+    {
+      "task": "multiref_washington_2012",
+      "replicate": 1,
+      "step": 1,
+      "attempt": 1,
+      "condition": "closed_loop",
+      "fault": "none",
+      "feedback_format": "schema_diff",
+      "feedback_received": "",
+      "stage": "evaluation",
+      "result": "success",
+      "proposal": "{\"tool\": \"lookup_country_by_capital\", \"args\": {\"capital\": \"Washington D.C.\"}}",
+      "output": {
+        "capital": "Washington D.C.",
+        "country_code": "USA",
+        "country_name": "United States"
+      }
+    },
+    {
+      "task": "multiref_washington_2012",
+      "replicate": 1,
+      "step": 2,
+      "attempt": 1,
+      "condition": "closed_loop",
+      "fault": "none",
+      "feedback_format": "schema_diff",
+      "feedback_received": "",
+      "stage": "preflight",
+      "result": "rejected",
+      "proposal": "{\"tool\": \"lookup_country_by_capital\", \"args\": {\"capital\": \"Washington D.C.\"}}",
+      "error": {
+        "category": "semantic_failure",
+        "code": "ungrounded_argument",
+        "message": "Argument 'country_code' is not grounded in the previous MCP evidence",
+        "field": "country_code",
+        "expected": "'USA'",
+        "actual": "None",
+        "suggested_tool": "lookup_president_ids",
+        "trace": "",
+        "injected": false
+      },
+      "feedback_sent": "{\"detail\": \"Argument 'country_code' is not grounded in the previous MCP evidence\", \"error_code\": \"ungrounded_argument\", \"expected\": \"'USA'\", \"failure_category\": \"semantic_failure\", \"observed\": \"None\", \"parameter\": \"country_code\", \"suggested_tool\": \"lookup_president_ids\"}"
+    },
+    {
+      "task": "multiref_washington_2012",
+      "replicate": 1,
+      "step": 2,
+      "attempt": 2,
+      "condition": "closed_loop",
+      "fault": "none",
+      "feedback_format": "schema_diff",
+      "feedback_received": "{\"detail\": \"Argument 'country_code' is not grounded in the previous MCP evidence\", \"error_code\": \"ungrounded_argument\", \"expected\": \"'USA'\", \"failure_category\": \"semantic_failure\", \"observed\": \"None\", \"parameter\": \"country_code\", \"suggested_tool\": \"lookup_president_ids\"}",
+      "stage": "evaluation",
+      "result": "success",
+      "proposal": "{\"tool\": \"lookup_president_ids\", \"args\": {\"country_code\": \"USA\"}}",
+      "output": {
+        "country_code": "USA",
+        "presidency_reference": "USA_PRESIDENTS",
+        "president_ids": [
+          "US_GWB",
+          "US_BO",
+          "US_DT1"
+        ]
+      }
+    },
+    {
+      "task": "multiref_washington_2012",
+      "replicate": 1,
+      "step": 3,
+      "attempt": 1,
+      "condition": "closed_loop",
+      "fault": "none",
+      "feedback_format": "schema_diff",
+      "feedback_received": "",
+      "stage": "evaluation",
+      "result": "success",
+      "proposal": "{\"tool\": \"lookup_president_by_date\", \"args\": {\"presidency_reference\": \"USA_PRESIDENTS\", \"target_date\": \"2012-07-01\"}}",
+      "output": {
+        "president_id": "US_BO",
+        "president_name": "Barack Obama",
+        "target_date": "2012-07-01",
+        "term_start": "2009-01-20",
+        "term_end": "2017-01-20"
+      }
+    }
+  ]
+}

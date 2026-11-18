@@ -1,0 +1,60 @@
+MCP THESIS REDO — FINAL COMPLETENESS AND INTEGRITY CHECK
+=============================================================
+
+FINAL STATUS: PASS
+
+PASS means the planned evidence is complete and internally consistent.
+PASS does not mean every LLM trial succeeded; failed trials remain empirical outcomes.
+
+DATA
+- Fixed benchmark countries: 30/30
+- Real reference origins: Wikidata-derived benchmark + independent H-DATA
+- Agreement structure: {'EXACT_TWO_SOURCE': 26, 'ONE_DAY_END_BOUNDARY_RESOLVED': 2, 'SOURCE2_RIGHT_CENSORED_AT_2022': 2}
+
+EXPERIMENT COUNTS
+- Inventory policy baseline: 480
+- Feedback-format ablation: 72
+- Corrected retry-budget ablation: 176
+- BFCL: 20 unique tasks, 60 policy-runs
+- 30-country two-source policy matrix: 450
+- Two-agent source-choice trials: 30
+- GRAND TOTAL: 1268
+
+RETRY-BUDGET CORRECTION
+- The old 237-vs-240 ambiguity is not reused.
+- New design has exactly 176 cells.
+- No-verification is measured once per task/fault because retry budget is not applicable.
+- Naive-retry and closed-loop are each measured at budgets 0,1,2,3,4.
+
+CONTROLLED-FAULT METHODOLOGY
+- No-fault rows are genuine end-to-end LLM runs.
+- Injected-fault rows begin from canonical task-specification control calls/chains.
+- Canonical controls are not counted as LLM-generated calls; natural no-fault rows are LLM-driven.
+- This prevents unrelated natural generation errors from being mislabeled as recovery failures.
+- Inventory transient naive-retry recoveries: 60/60
+
+NAIVE RETRY MECHANISM
+- Naive retry replays the identical failed proposal; it does not regenerate it.
+- transient_once blocks only attempt 1, so the same valid call can succeed on attempt 2.
+- persistent_corruption keeps the corrupted country code on every naive retry.
+- Observed transient proposal-replay pairs: 30
+- Observed persistent proposal-replay pairs: 30
+
+BFCL WORDING
+- Unique BFCL tasks: 20
+- Policy-runs: 60 (20 tasks x 3 policies)
+
+TWO-AGENT DESIGN
+- Both agents receive the full MCP catalog.
+- Agent A chooses the first evidence source.
+- Agent B must independently select the other source.
+- Final decision is evaluated against both retrieved source records.
+- Completed two-agent trials: 25/30
+
+SOFTWARE CHECKS
+- pip check: PASS
+- pytest: PASS
+- pip check output: No broken requirements found.
+- pytest output: ..s.............................................                         [100%] | =========================== short test summary info =========================== | SKIPPED [1] ..\..\..\..\MCP-Thesis\tests\test_mock_runner.py:17: Real MCP SDK is installed; run tests/test_policies.py instead | 47 passed, 1 skipped in 5.62s
+
+Generated verification files are in redo_v3_final_verification/.

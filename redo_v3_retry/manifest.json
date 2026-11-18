@@ -1,0 +1,29 @@
+{
+  "experiment": "corrected_retry_budget_ablation_final",
+  "model": "qwen2.5:1.5b",
+  "task_count": 2,
+  "faults": [
+    "none",
+    "malformed_json",
+    "type_mismatch",
+    "stale_schema",
+    "transient_api",
+    "transient_timeout",
+    "transient_rate_limit",
+    "wrong_tool"
+  ],
+  "budgets": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "method_note": "No-fault cells are natural LLM runs. Injected-fault cells use validated LLM-generated clean seed proposals before controlled fault injection.",
+  "total_planned_trials": 176,
+  "plan_signature": "6a5b0335a9caf457123858a5dd341054013a6db9a3109ffc3a81d5f5ca50106c",
+  "completion_status": "complete",
+  "saved_rows": 176,
+  "start_or_check_utc": "2026-10-27T14:17:49.893773+00:00",
+  "finish_utc": "2026-10-27T14:17:50.550013+00:00"
+}

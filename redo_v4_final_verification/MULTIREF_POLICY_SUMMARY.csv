@@ -1,0 +1,16 @@
+﻿fault,condition,n,completed,completion_rate,mean_retries,mean_latency_seconds,mean_tokens
+none,closed_loop,30,27,0.9,0.2,20.387509966666666,5876.533333333334
+none,naive_retry,30,27,0.9,0.2,18.1879695,5503.666666666667
+none,no_verification,30,24,0.8,0,91.74111366666666,5397.3
+persistent_corruption,closed_loop,30,30,1.0,1.5,20.858857966666665,2339.1
+persistent_corruption,naive_retry,30,0,0.0,2,0.025491166666666665,0.0
+persistent_corruption,no_verification,30,0,0.0,0,0.017064366666666667,0.0
+transient_once,closed_loop,30,30,1.0,1.5,21.334371766666667,2333.4666666666667
+transient_once,naive_retry,30,30,1.0,1,0.0093559,0.0
+transient_once,no_verification,30,0,0.0,0,0.005905333333333334,0.0
+type_mismatch,closed_loop,30,29,0.9666666666666667,1.5333333333333334,23.750433833333332,2451.0666666666666
+type_mismatch,naive_retry,30,0,0.0,2,0.0112215,0.0
+type_mismatch,no_verification,30,0,0.0,0,0.008126166666666667,0.0
+wrong_tool,closed_loop,30,29,0.9666666666666667,1.6,24.3672527,2547.366666666667
+wrong_tool,naive_retry,30,0,0.0,2,0.0098381,0.0
+wrong_tool,no_verification,30,0,0.0,0,0.008077333333333334,0.0

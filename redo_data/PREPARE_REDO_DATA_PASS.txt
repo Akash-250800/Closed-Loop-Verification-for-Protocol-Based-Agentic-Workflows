@@ -1,0 +1,7 @@
+PREPARE REDO DATA: PASS
+Countries: 30/30
+Reference datasets created: 3
+Independent source agreement checked: Wikidata-derived benchmark + H-DATA
+Exact two-source term cases: 26
+Documented boundary/censoring cases: 4
+No external data was invented by this script.

@@ -1,0 +1,28 @@
+{
+  "experiment": "inventory_natural_plus_controlled_fault_baseline_final",
+  "model": "qwen2.5:1.5b",
+  "task_count": 20,
+  "faults": [
+    "none",
+    "malformed_json",
+    "type_mismatch",
+    "stale_schema",
+    "transient_api",
+    "transient_timeout",
+    "transient_rate_limit",
+    "wrong_tool"
+  ],
+  "policies": [
+    "no_verification",
+    "naive_retry",
+    "closed_loop"
+  ],
+  "retry_budget": 2,
+  "method_note": "No-fault cells are genuine end-to-end LLM runs. Injected-fault cells start from a canonical task-specification clean proposal chain so recovery is not confounded by an unrelated fresh generation error.",
+  "total_planned_trials": 480,
+  "plan_signature": "fca5e6dddf9843c45c175813c420f08c39c5d9b939bd33117d67dfe74260db7a",
+  "completion_status": "complete",
+  "saved_rows": 480,
+  "start_or_check_utc": "2026-10-27T14:17:44.074878+00:00",
+  "finish_utc": "2026-10-27T14:17:44.746761+00:00"
+}

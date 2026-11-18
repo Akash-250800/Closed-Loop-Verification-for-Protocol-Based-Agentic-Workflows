@@ -1,0 +1,25 @@
+FINAL GUARDED MULTI-REFERENCE BUILD
+
+1. Copy ALL files from this patch into E:\MCP-Thesis and choose Replace for duplicates.
+2. Keep .venv and every existing results folder.
+3. Run ONE command:
+
+   RUN_MULTIREF_FINAL.bat
+
+The script does the rest:
+- pytest
+- Ollama connection check
+- 9-cell recovery gate
+- ONLY if the gate passes: 36-cell final multi-reference run across USA, France, Mexico and Brazil
+- analysis
+- final recovery validation
+
+The gate prevents another long run if the recovery behavior is not correct.
+
+New dependency chain:
+Reference A: capital -> country_code
+Reference B: country_code -> presidency_reference + president IDs
+Reference C: presidency_reference + target date -> president term
+
+The presidency_reference is a STRING retrieved from Reference B. This removes the observed
+small-model array-serialization failure without hard-coding the answer or expected tool.

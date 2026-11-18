@@ -1,0 +1,4 @@
+condition,fault,feedback_format,retry_budget,n,completion_rate,recovery_rate,mean_latency_seconds,mean_retries,mean_tokens,preinjection_error_rate,circuit_breaker_rate
+closed_loop,none,schema_diff,2,20,0.45,N/A,11.24139715,1.1,1489.1,0.0,0.55
+naive_retry,none,not_applicable,2,20,0.45,N/A,2.22202005,1.1,553.75,0.0,0.55
+no_verification,none,not_applicable,0,20,0.45,N/A,10.3884633,0,554.1,0.0,0.55

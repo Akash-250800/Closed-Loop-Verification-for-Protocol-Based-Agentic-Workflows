@@ -1,0 +1,4 @@
+﻿condition,n,completed,completion_rate,mean_retries,mean_latency_seconds,mean_tokens
+closed_loop,20,9,0.45,1.1,11.24139715,1489.1
+naive_retry,20,9,0.45,1.1,2.22202005,553.75
+no_verification,20,9,0.45,0,10.3884633,554.1

@@ -1,0 +1,11 @@
+PHASE C TARGETED REPAIR: PASS
+Original Phase C untouched: 450 rows
+Unchanged canonical fault-injection rows: 360
+Replaced natural no-fault rows: 90 (30 countries x 3 policies)
+Corrected combined Phase C: 450 rows
+Research total remains 1,268 (not 1,358)
+Corrected Phase C directory: redo_v4_multiref_corrected
+Use this new directory for Phase C results; retain redo_v3_multiref as historical original.
+no_verification: 24/150 overall; no-fault 24/30
+naive_retry: 57/150 overall; no-fault 27/30
+closed_loop: 145/150 overall; no-fault 27/30

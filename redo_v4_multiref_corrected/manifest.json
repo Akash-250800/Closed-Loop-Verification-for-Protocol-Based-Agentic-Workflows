@@ -1,0 +1,21 @@
+{
+  "experiment": "phase_c_combined_corrected_30_country_comparison",
+  "repair_version": "grounded_merge_v2_targeted_nofault",
+  "model": "qwen2.5:1.5b",
+  "task_count": 30,
+  "total_planned_trials": 450,
+  "previously_saved_controlled_fault_rows": 360,
+  "new_natural_nofault_rows": 90,
+  "method_note": "Consolidated audit artifact, NOT 450 newly run trials. 360 controlled seeded fault trials are unchanged from redo_v3_multiref/records.json. 90 complete natural no-fault cells were rerun using the same grounded merge fix as Phase D. The original 450 records remain available; do not add old and new totals.",
+  "source_hashes": {
+    "original_phase_c_records": "b4a6f92f9d2b8dc872ac374eeb5178a0741fe35db9b820e7e5c8979eb83097a6",
+    "replacement_nofault_records": "4bea6077603c4ef19717e31b865a4d5ec9790fd98170919e258d3957cb4ee5c3",
+    "corrected_runner": "a5ce6d5f43a761a4404667ed9bab3924d2763aa0d71ff60d6be02d3f1a7be137",
+    "prepared_benchmark": "61028ef98a3d9e41acabdd9f24f8931965be4990c7036abbef42cf7752ca4af4"
+  },
+  "plan_signature": "5b1eca8ded2be8c8ad55687c2e94840532d82c49ecc03da4723f41e892e6ee9f",
+  "completion_status": "complete",
+  "saved_rows": 450,
+  "start_or_check_utc": "2026-10-28T09:26:33.215510+00:00",
+  "finish_utc": "2026-10-28T09:26:33.396473+00:00"
+}
